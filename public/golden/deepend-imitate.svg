@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="Fredoka, Trebuchet MS, sans-serif">
+<rect width="1080" height="1080" fill="#0E2A46"/>
+<rect x="135" y="0" width="8" height="1080" fill="#F5F1E8" opacity="0.12"/><rect x="405" y="0" width="8" height="1080" fill="#F5F1E8" opacity="0.12"/><rect x="675" y="0" width="8" height="1080" fill="#F5F1E8" opacity="0.12"/><rect x="945" y="0" width="8" height="1080" fill="#F5F1E8" opacity="0.12"/><ellipse cx="540" cy="470" rx="120" ry="95" fill="#8A7CFF"/><circle cx="505" cy="450" r="14" fill="#101629"/><circle cx="575" cy="450" r="14" fill="#101629"/><path d="M470 560 q 10 70 -30 110 M510 570 q 5 75 -12 120 M570 570 q -5 75 12 120 M610 560 q -10 70 30 110" stroke="#8A7CFF" stroke-width="26" fill="none" stroke-linecap="round"/>
+<text x="60" y="748" font-size="68" font-weight="700" fill="#5AC8FA"><tspan x="60" dy="0">He can imitate</tspan><tspan x="60" dy="76">anyone. Except</tspan><tspan x="60" dy="76">himself.</tspan></text>
+<text x="60" y="1000" font-size="26" fill="#F5F1E8" opacity="0.75">THE DEEP END · in cinemas this autumn</text>
+<text x="940" y="1002" font-size="30" font-weight="700" fill="#FFC83D">PAS</text>
+<text x="826" y="1030" font-size="15" fill="#F5F1E8" opacity="0.45">unofficial concept</text>
+</svg>

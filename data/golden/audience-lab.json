@@ -1,0 +1,121 @@
+{
+  "films": {
+    "Luma": {
+      "sentiment": "Overwhelmingly warm. Audiences keep returning to three things: the film speaks to real childhood fear without talking down, adults see their own anxiety in it, and the single-light-in-the-dark imagery is instantly iconic.",
+      "thin": false,
+      "loves": [
+        {
+          "title": "It takes kids' fear seriously",
+          "quote": "My daughter is terrified of the dark and she walked out of the screening asking for a firefly nightlight.",
+          "angles": [
+            {
+              "hook": "Bring the kid who still checks under the bed.",
+              "primary_text": "Luma is scared of the dark too. This summer she becomes the light her whole swarm needs. In cinemas this summer.",
+              "visual": "Midnight field, one warm lamplight glow bottom-left, tiny firefly silhouette, headline set large in rounded display."
+            },
+            {
+              "hook": "Nightlights sold separately.",
+              "primary_text": "A film about being scared of the dark, for everyone who ever was. Family tickets at participating cinemas.",
+              "visual": "A child's bedside lamp glowing against deep blue, constellation motif above, wordmark small in the corner."
+            }
+          ]
+        },
+        {
+          "title": "Adults see their own anxiety in it",
+          "quote": "Went in expecting a kids film about bugs. Got a film about my own anxiety.",
+          "angles": [
+            {
+              "hook": "You were never really afraid of the dark.",
+              "primary_text": "You were afraid of being the only light. Luma understands. This summer, on the big screen.",
+              "visual": "Vast dark field, one small glowing firefly centre frame, enormous negative space, headline top-third."
+            }
+          ]
+        },
+        {
+          "title": "The imagery already feels iconic",
+          "quote": "That single warm light drifting over the dark field is going to be on posters forever.",
+          "angles": [
+            {
+              "hook": "One small light. One long night.",
+              "primary_text": "From the story room: every frame of the harvest-night sequence was lit by a single source. See why on the big screen.",
+              "visual": "Poster-pure: flat midnight block, one lamplight circle, tall grass silhouettes along the bottom edge."
+            }
+          ]
+        }
+      ]
+    },
+    "The Deep End": {
+      "sentiment": "Very positive. The comedy lands hard with kids while the masking theme hits teens and adults unexpectedly deep; the ink-cloud gag and the coach are already quotable.",
+      "thin": false,
+      "loves": [
+        {
+          "title": "Shy kids feel seen",
+          "quote": "Every shy teenager needs to see this. The swim meet finale where he stops imitating is perfect.",
+          "angles": [
+            {
+              "hook": "He can imitate anyone. Except himself.",
+              "primary_text": "The Deep End, a comedy about the hardest stroke there is: being yourself. In cinemas this autumn.",
+              "visual": "Pool-lane blues, small octopus silhouette mid-lane, caustic light ripples, headline in rounded display."
+            }
+          ]
+        },
+        {
+          "title": "The comedy genuinely lands",
+          "quote": "The ink cloud gag never got old, and my 9 year old has quoted the coach every day since.",
+          "angles": [
+            {
+              "hook": "Warning: contains ink.",
+              "primary_text": "The funniest thing in the pool this autumn. Bring the whole lane.",
+              "visual": "Sky-blue field, playful ink-splat shape in deep navy, goggles motif, one-line headline."
+            }
+          ]
+        }
+      ]
+    },
+    "Wrench & Rivet": {
+      "sentiment": "Warm with one caveat. The two-robot chemistry and the fix-it heart are the draw; the city-hall subplot is the only recurring gripe, so marketing should stay on the buddies and the junkyard.",
+      "thin": false,
+      "loves": [
+        {
+          "title": "The buddy chemistry carries it",
+          "quote": "Every scene with the two robots alone together is gold though.",
+          "angles": [
+            {
+              "hook": "Two stubborn robots. One junkyard. Zero compromise.",
+              "primary_text": "Wrench & Rivet inherit the same scrap heap this spring. Sparks, obviously, fly.",
+              "visual": "Warm rust-orange field, two mismatched robot silhouettes back to back, tool motifs scattered small."
+            }
+          ]
+        },
+        {
+          "title": "People who fix things feel honoured",
+          "quote": "My dad fixes cars and he said it's the first film that gets why people love repairing things.",
+          "angles": [
+            {
+              "hook": "For everyone who fixes what others throw away.",
+              "primary_text": "A love letter to repair, one bolt at a time. In cinemas this spring.",
+              "visual": "A single sunflower growing through flat scrap silhouettes, ember accent, wide negative space."
+            }
+          ]
+        }
+      ]
+    },
+    "Paper Moon": {
+      "sentiment": "Quietly devastating in the best way. Sparse feedback so far, but every note is about calling a grandparent afterwards; the kitchen-table lamplight scenes are the emotional core.",
+      "thin": true,
+      "loves": [
+        {
+          "title": "It sends people straight to the phone",
+          "quote": "Call your grandmother after this one.",
+          "angles": [
+            {
+              "hook": "One thousand cranes. One promise.",
+              "primary_text": "Paper Moon opens this winter. Bring someone who taught you something with their hands.",
+              "visual": "Origami crane silhouette against a huge paper-white moon on midnight, lamplight window glow lower right."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

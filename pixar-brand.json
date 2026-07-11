@@ -1,0 +1,182 @@
+{
+  "_readme": "Pixar Ads Studio — single source of truth for all six tools. Unofficial fan-concept demo: not affiliated with, endorsed by, or connected to Pixar or Disney. The film slate is fictional. Edit this file and every tool follows.",
+  "brand": "Pixar",
+  "descriptor": "Story comes first",
+  "tagline": "Every ad should feel like the first ten minutes of a great film.",
+  "one_liner": "We market films the way we make them: story first, heart always, never a cheap trick.",
+  "brand_brief": "Audiences don't buy tickets to animation, they buy tickets to feeling something. Our marketing earns attention the same way our films do: a real character, a real want, an obstacle you recognise from your own life. If an ad wouldn't make an animator proud, it doesn't ship.",
+  "disclaimer": "Unofficial concept demo. Not affiliated with Pixar or Disney. All films shown are fictional.",
+  "positioning": {
+    "who": "Families, animation fans, and grown adults who cry in the first ten minutes and pretend they didn't.",
+    "promise": "Ads with the same emotional honesty as the films.",
+    "differentiators": [
+      "Story-first creative: every asset has a character and a want, not a feature list",
+      "No spoiler policy: we sell the feeling, never the third act",
+      "House palette and type locked in every asset, in every territory"
+    ]
+  },
+  "values": ["Story is king", "Earn the emotion, never force it", "Craft over speed", "Respect the audience's intelligence"],
+  "audience": {
+    "core": "Parents planning the family weekend, 28-45, deciding between three films and a trampoline park.",
+    "also": [
+      "Animation devotees who see everything opening weekend and post about sakuga",
+      "Nostalgic adults, 25-40, who grew up on the classics and go without kids",
+      "Teens who discover films through edits and memes, not trailers",
+      "Grandparents looking for a safe, genuinely good shared outing"
+    ]
+  },
+  "voice": {
+    "register_default": "Warm, wondrous, a little playful. Like a great storyteller at a dinner table, not a hype machine.",
+    "personality": "Sincere, curious, craft-obsessed, quietly funny.",
+    "we_sound_like": [
+      "Somebody who loves these characters telling you why",
+      "A note from the story room, not a press release",
+      "Specific and visual: name the character, the moment, the feeling"
+    ],
+    "we_never_sound_like": [
+      "A movie-trailer announcer ('One studio. One summer. One unforgettable ride.')",
+      "Corporate synergy speak or franchise math",
+      "Desperate: begging for tickets, stacking superlatives"
+    ],
+    "signature_moves": [
+      "Lead with a character's want, not the film's premise",
+      "One concrete image beats three adjectives",
+      "Let quiet moments be quiet; whitespace is confidence"
+    ],
+    "do": ["Name feelings plainly", "Use present tense", "Write to one person", "Trust the audience to get it"],
+    "dont": ["Spoil anything past act one", "Stack superlatives", "Use trailer-voice clichés", "Punch down or wink cynically"]
+  },
+  "lexicon": {
+    "prefer": ["story", "heart", "wonder", "handmade", "frame by frame", "the story room", "opening night", "big screen"],
+    "avoid": ["content", "IP", "franchise", "synergy", "epic", "insane", "mind-blowing", "instant classic", "must-see event"]
+  },
+  "colours": {
+    "_note": "Premiere-night palette. Midnight is the canvas, lamplight is the hero accent. These hex values are mirrored 1:1 in src/index.css tokens; change both together.",
+    "midnight": "#101629",
+    "panel": "#1A2140",
+    "paper": "#F5F1E8",
+    "lamplight": "#FFC83D",
+    "ember": "#FF6B4A",
+    "sky": "#5AC8FA",
+    "teal": "#3EDBB6",
+    "rose": "#FF4E6A",
+    "violet": "#8A7CFF"
+  },
+  "typography": {
+    "headline": "Fredoka, rounded and friendly, the warmth of hand-lettering with the discipline of a grid",
+    "body": "Inter, quiet and legible",
+    "social_posts": "Big rounded display headline, one line of body, wordmark small in a corner",
+    "rules": ["Sentence case everywhere", "Never condense or outline the headline face", "One typeface pairing, no exceptions"]
+  },
+  "look_and_feel": "Premiere night: deep midnight blues, one warm pool of lamplight, characters small against big worlds. Flat colour-block posters with a single strong silhouette beat busy collages every time.",
+  "image_rules": {
+    "signature_layout": "One hero silhouette or motif against a flat midnight or accent field, headline set big in the rounded display face, wordmark small in one corner.",
+    "palette_direction": "Midnight blue canvas, lamplight yellow as the hero accent, at most two supporting accents (ember, sky, teal, rose, violet). Flat colour-blocks, no gradients, no lens flares.",
+    "ai_may_generate": ["Flat colour-block poster layouts", "Abstract shapes, silhouettes, environments, props", "Typography-led compositions"],
+    "ai_must_not_generate": ["Off-model versions of film characters", "Photorealistic humans presented as cast or fans", "Fake critic quotes, award laurels, or star ratings", "Other studios' characters or styles"],
+    "people": "Characters appear only as approved silhouettes or supplied art. AI never invents a character's face; audiences spot off-model art instantly and it reads as bootleg.",
+    "why": "Off-model art is the animation equivalent of AI teeth: one wrong frame and trust is gone."
+  },
+  "marketing_standards": {
+    "_note": "House rules for film marketing claims. Flags are for human review, not legal advice.",
+    "regulators": ["Advertising standards bodies (ASA/ASAI/FTC endorsement rules)", "MPA rating usage rules"],
+    "hard_rules": [
+      "Never spoil anything beyond the first act; no third-act imagery, twists, or character fates",
+      "Critic quotes must be real, attributed, and unedited; never paraphrase praise into quote marks",
+      "Never invent or imply review scores, awards, or 'certified' badges",
+      "Rating (G/PG etc.) must be shown accurately; never market a film against its rating",
+      "Ticket and offer pricing must be complete: no hidden fees, clear territory and date limits"
+    ]
+  },
+  "claim_check": {
+    "_note": "Words and claims Story Guard treats as banned or requiring proof.",
+    "banned_or_high_risk": ["best film of the year", "guaranteed", "instant classic", "#1 film", "critics agree", "everyone is talking about", "100%"],
+    "must_substantiate": ["award mentions (name the award and year)", "critic quotes (name the critic and outlet)", "box-office claims (cite the source)", "'from the studio behind' lineage claims"],
+    "price_and_finance": ["Offer terms complete and dated", "Family-bundle pricing must name what's included", "No 'free' unless genuinely unconditional"]
+  },
+  "anti_slop": {
+    "_source": "Same empirical no-slop ruleset as the original studio, tuned for film marketing.",
+    "hard_bans": [
+      "em dashes",
+      "not X but Y constructions",
+      "three-part power lists ('laughter, tears, and wonder')",
+      "trailer-voice openers ('In a world', 'This summer', 'Get ready')",
+      "the words: delve, unlock, elevate, seamless, journey, game-changer, unforgettable, epic",
+      "fake question pivots ('Looking for the perfect family night? Look no further')",
+      "hashtag stuffing and exclamation spam"
+    ],
+    "positive_markers": [
+      "A named character with a concrete want",
+      "One specific visual moment from act one",
+      "Plain named feelings ('you'll miss your dad', not 'an emotional rollercoaster')",
+      "Sentences a human would say out loud"
+    ],
+    "prove_it_test": "Could only this film have made this claim? If any film could run this line, cut it.",
+    "lint": ["No sentence over 24 words", "Max one exclamation mark per post, ideally zero", "Read it aloud; if it sounds like a trailer, rewrite"]
+  },
+  "story_guard_scoring": {
+    "_note": "Categories and tiers for Story Guard. Weakest category drags the overall (CSD scoring).",
+    "categories": [
+      { "name": "Story & heart", "what": "Is there a character, a want, a feeling? Or just marketing about marketing?" },
+      { "name": "Claim validity", "what": "Spoiler-safe, no invented quotes/scores/awards, rating accurate, offers complete." },
+      { "name": "Brand voice", "what": "Warm storyteller register, lexicon respected, no trailer-voice." },
+      { "name": "No-slop", "what": "Zero banned patterns; concrete beats generic; human cadence." }
+    ],
+    "tiers": [
+      { "min": 90, "max": 100, "label": "Box Office Gold", "image": "/scores/gold.svg" },
+      { "min": 75, "max": 89, "label": "Crowd Pleaser", "image": "/scores/crowd.svg" },
+      { "min": 50, "max": 74, "label": "Matinee", "image": "/scores/matinee.svg" },
+      { "min": 25, "max": 49, "label": "Rough Cut", "image": "/scores/rough.svg" },
+      { "min": 0, "max": 24, "label": "Straight to DVD", "image": "/scores/dvd.svg" }
+    ],
+    "feedback": "Quote the exact snippet, say what is wrong, give the fix.",
+    "output": "overall, per-category scores, categorized feedback, on-brand rewrite"
+  },
+  "films": [
+    {
+      "name": "Luma",
+      "logline": "A young firefly who is afraid of the dark must guide her swarm home after the harvest lights go out.",
+      "audience_focus": "Families with young kids; adults who were once afraid of the dark",
+      "release": "Summer",
+      "motifs": ["a single warm light in deep blue night", "fields of tall grass", "constellations"]
+    },
+    {
+      "name": "The Deep End",
+      "logline": "A shy octopus who can perfectly imitate anything joins a small-town swim team and has to finally be himself.",
+      "audience_focus": "Kids 8-12, teens, anyone who ever hid in plain sight",
+      "release": "Autumn",
+      "motifs": ["pool-water caustics", "swim lanes", "ink-cloud shyness"]
+    },
+    {
+      "name": "Wrench & Rivet",
+      "logline": "Two rival repair robots inherit the same junkyard and must rebuild it together before the city reclaims it.",
+      "audience_focus": "Families, buddy-comedy fans, nostalgic adults",
+      "release": "Spring",
+      "motifs": ["warm rust oranges", "tool silhouettes", "a sunflower growing through scrap"]
+    },
+    {
+      "name": "Paper Moon",
+      "logline": "A grandmother and granddaughter fold one thousand paper cranes to keep a promise neither fully understands.",
+      "audience_focus": "Multi-generational; awards-season adults",
+      "release": "Winter",
+      "motifs": ["origami folds", "moonlight on paper", "kitchen-table lamplight"]
+    }
+  ],
+  "true_claims": [
+    "Fictional slate: Luma (summer), The Deep End (autumn), Wrench & Rivet (spring), Paper Moon (winter)",
+    "Family ticket bundles exist in participating cinemas; terms shown in-asset",
+    "Behind-the-scenes 'story room' content is real and produced in-house"
+  ],
+  "competitor_seeds": [
+    "https://www.animationmagazine.net",
+    "https://www.cartoonbrew.com",
+    "https://variety.com/v/film"
+  ],
+  "demo_captions": {
+    "_note": "Used by the Story Guard golden examples.",
+    "bad": "This summer, get ready for the most EPIC, mind-blowing animated event of the year!!! Critics agree: Luma is a guaranteed instant classic — laughter, tears, and wonder for the whole family! Don't miss the unforgettable journey everyone is talking about! #Luma #MustSee #InstantClassic",
+    "why_bad": "Trailer-voice opener, invented critic consensus, banned superlatives, em dash, three-part list, hashtag stuffing.",
+    "good": "Luma is scared of the dark. Tonight she's the only light her swarm has. Bring the kid who still checks under the bed; this one's for them. In cinemas this summer.",
+    "why_good": "Named character with a concrete want, one act-one image, plain feeling, speaks to one parent, no slop patterns."
+  }
+}

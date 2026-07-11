@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="Fredoka, Trebuchet MS, sans-serif">
+<rect width="1080" height="1080" fill="#191524"/>
+<circle cx="820" cy="240" r="130" fill="#F5F1E8" opacity="0.9"/><rect x="200" y="640" width="680" height="18" rx="9" fill="#3A3350"/><path d="M420 560 L540 480 L640 550 L560 470 Z" fill="#FFC83D"/><circle cx="540" cy="620" r="150" fill="#FFC83D" opacity="0.08"/>
+<text x="60" y="824" font-size="68" font-weight="700" fill="#FFC83D"><tspan x="60" dy="0">Fold. Repeat.</tspan><tspan x="60" dy="76">Remember.</tspan></text>
+<text x="60" y="1000" font-size="26" fill="#F5F1E8" opacity="0.75">PAPER MOON · in cinemas this winter</text>
+<text x="940" y="1002" font-size="30" font-weight="700" fill="#FFC83D">PAS</text>
+<text x="826" y="1030" font-size="15" fill="#F5F1E8" opacity="0.45">unofficial concept</text>
+</svg>

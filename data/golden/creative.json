@@ -1,0 +1,67 @@
+{
+  "creatives": [
+    {
+      "image": "/golden/luma-hero.svg",
+      "headline": "One small light. One long night.",
+      "caption": "Luma is scared of the dark. Tonight she's the only light her swarm has. Bring the kid who still checks under the bed; this one's for them. In cinemas this summer.",
+      "category": "Story-first launches",
+      "film": "Luma"
+    },
+    {
+      "image": "/golden/luma-nightlight.svg",
+      "headline": "Nightlights sold separately.",
+      "caption": "A film about being scared of the dark, for everyone who ever was. Family tickets at participating cinemas this summer.",
+      "category": "Story-first launches",
+      "film": "Luma"
+    },
+    {
+      "image": "/golden/deepend-imitate.svg",
+      "headline": "He can imitate anyone. Except himself.",
+      "caption": "The Deep End is a comedy about the hardest stroke there is: being yourself. In cinemas this autumn.",
+      "category": "Story-first launches",
+      "film": "The Deep End"
+    },
+    {
+      "image": "/golden/deepend-ink.svg",
+      "headline": "Warning: contains ink.",
+      "caption": "The funniest thing in the pool this autumn. Bring the whole lane.",
+      "category": "Family weekend pushes",
+      "film": "The Deep End"
+    },
+    {
+      "image": "/golden/wrench-buddies.svg",
+      "headline": "Two stubborn robots. One junkyard.",
+      "caption": "Wrench and Rivet inherit the same scrap heap this spring. Sparks, obviously, fly. Matinee family bundles at participating cinemas.",
+      "category": "Family weekend pushes",
+      "film": "Wrench & Rivet"
+    },
+    {
+      "image": "/golden/wrench-sunflower.svg",
+      "headline": "For everyone who fixes what others throw away.",
+      "caption": "A love letter to repair, one bolt at a time. Wrench & Rivet, in cinemas this spring.",
+      "category": "Grown-up angles",
+      "film": "Wrench & Rivet"
+    },
+    {
+      "image": "/golden/papermoon-cranes.svg",
+      "headline": "One thousand cranes. One promise.",
+      "caption": "Paper Moon opens this winter. Bring someone who taught you something with their hands.",
+      "category": "Grown-up angles",
+      "film": "Paper Moon"
+    },
+    {
+      "image": "/golden/luma-adult.svg",
+      "headline": "You were never really afraid of the dark.",
+      "caption": "You were afraid of being the only light. Luma understands. This summer, on the big screen. Evening showtimes from opening night.",
+      "category": "Grown-up angles",
+      "film": "Luma"
+    },
+    {
+      "image": "/golden/papermoon-fold.svg",
+      "headline": "Fold. Repeat. Remember.",
+      "caption": "It takes four minutes to fold a paper crane properly. Paper Moon took four years. This winter, at the kitchen table of the big screen.",
+      "category": "Story-first launches",
+      "film": "Paper Moon"
+    }
+  ]
+}

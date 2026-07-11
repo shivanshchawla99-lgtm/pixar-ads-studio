@@ -1,0 +1,21 @@
+{
+  "input": {
+    "type": "Instagram caption",
+    "title": "",
+    "content": "Luma is scared of the dark. Tonight she's the only light her swarm has. Bring the kid who still checks under the bed; this one's for them. In cinemas this summer."
+  },
+  "overall": 94,
+  "categories": {
+    "Story & heart": 95,
+    "Claim validity": 95,
+    "Brand voice": 95,
+    "No-slop": 92
+  },
+  "feedback": {
+    "Story & heart": [],
+    "Claim validity": [],
+    "Brand voice": [],
+    "No-slop": []
+  },
+  "rewrite": "Nothing to fix. This is on-brand: a named character with a concrete want, one act-one image, a plain feeling written to one parent, an accurate release claim, and zero slop patterns."
+}

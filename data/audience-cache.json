@@ -1,0 +1,35 @@
+{
+  "_note": "Synthetic test-screening and social feedback for the fictional slate. Demo data: written for this concept, not scraped from anywhere.",
+  "films": {
+    "Luma": {
+      "reviews": [
+        { "author": "M.", "rating": 5, "text": "My daughter is terrified of the dark and she walked out of the screening asking for a firefly nightlight. The scene where Luma admits she's scared to the whole swarm had me in bits." },
+        { "author": "D.", "rating": 5, "text": "Visually the most beautiful thing they've screened in years. That single warm light drifting over the dark field is going to be on posters forever." },
+        { "author": "A.", "rating": 4, "text": "Took my mum. She cried, I cried, the man next to us cried. It's about being the one everyone depends on when you feel smallest. Middle sagged a little but the ending lands." },
+        { "author": "R.", "rating": 5, "text": "Went in expecting a kids film about bugs. Got a film about my own anxiety. The harvest lights going out is one of the great openings." },
+        { "author": "J.", "rating": 4, "text": "Kids were glued. As a parent I appreciated it never talks down to them, it lets the scary bits actually be a bit scary." }
+      ]
+    },
+    "The Deep End": {
+      "reviews": [
+        { "author": "S.", "rating": 5, "text": "The octopus copying the confident kids to fit in destroyed me. Every shy teenager needs to see this. The swim meet finale where he stops imitating is perfect." },
+        { "author": "K.", "rating": 4, "text": "Funniest one in ages. The ink cloud gag never got old, and my 9 year old has quoted the coach every day since." },
+        { "author": "T.", "rating": 4, "text": "It's really about masking. As an autistic adult I did not expect a swim-team comedy to get that so right." }
+      ]
+    },
+    "Wrench & Rivet": {
+      "reviews": [
+        { "author": "P.", "rating": 5, "text": "A buddy comedy where the buddies genuinely annoy each other for 40 minutes and you still root for both. The sunflower through the scrap heap got an audible awww." },
+        { "author": "L.", "rating": 4, "text": "My dad fixes cars and he said it's the first film that gets why people love repairing things. Junkyard looks gorgeous at sunset." },
+        { "author": "N.", "rating": 4, "text": "Kids loved the tool jokes. I loved that it's secretly about two stubborn old colleagues learning to share. Very rewatchable." },
+        { "author": "G.", "rating": 3, "text": "Fun but the city-hall subplot drags. Every scene with the two robots alone together is gold though." }
+      ]
+    },
+    "Paper Moon": {
+      "reviews": [
+        { "author": "E.", "rating": 5, "text": "Call your grandmother after this one. The kitchen-table folding scenes at night are the most tender thing they've made." },
+        { "author": "H.", "rating": 5, "text": "A thousand cranes, one promise, no villain. Proof you don't need a chase scene if the feelings are true. My teenagers were silent the whole ride home." }
+      ]
+    }
+  }
+}

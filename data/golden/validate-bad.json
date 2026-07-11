@@ -1,0 +1,60 @@
+{
+  "input": {
+    "type": "Instagram caption",
+    "title": "",
+    "content": "This summer, get ready for the most EPIC, mind-blowing animated event of the year!!! Critics agree: Luma is a guaranteed instant classic — laughter, tears, and wonder for the whole family! Don't miss the unforgettable journey everyone is talking about! #Luma #MustSee #InstantClassic"
+  },
+  "overall": 8,
+  "categories": {
+    "Story & heart": 15,
+    "Claim validity": 5,
+    "Brand voice": 20,
+    "No-slop": 10
+  },
+  "feedback": {
+    "Story & heart": [
+      {
+        "snippet": "the most EPIC, mind-blowing animated event of the year",
+        "problem": "There is no character, no want, no moment from the film. Any film could run this line, which means it sells nothing about this one.",
+        "fix": "Lead with Luma and what she wants: a firefly afraid of the dark who has to become the light."
+      }
+    ],
+    "Claim validity": [
+      {
+        "snippet": "Critics agree",
+        "problem": "No critics are named or quoted. Implied critical consensus without a real, attributed quote breaks the house claim rules.",
+        "fix": "Cut it, or quote one real named critic with their outlet."
+      },
+      {
+        "snippet": "guaranteed instant classic",
+        "problem": "'Guaranteed' and 'instant classic' are both on the banned claims list. Nothing about reception can be guaranteed before release.",
+        "fix": "Remove the claim entirely. Show the act-one image and let the audience decide."
+      }
+    ],
+    "Brand voice": [
+      {
+        "snippet": "This summer, get ready",
+        "problem": "Trailer-voice opener. The brand sounds like a storyteller at a dinner table, never a movie-trailer announcer.",
+        "fix": "Open on the character or the feeling: 'Luma is scared of the dark.'"
+      },
+      {
+        "snippet": "Don't miss the unforgettable journey",
+        "problem": "'Unforgettable' and 'journey' are both on the banned lexicon; begging people not to miss it reads desperate.",
+        "fix": "State when it opens and who it's for. Confidence, not pleading."
+      }
+    ],
+    "No-slop": [
+      {
+        "snippet": "laughter, tears, and wonder",
+        "problem": "A three-part power list, and an em dash right before it. Both are hard-banned slop patterns.",
+        "fix": "Pick the one true feeling and name it plainly."
+      },
+      {
+        "snippet": "#Luma #MustSee #InstantClassic",
+        "problem": "Hashtag stuffing, plus triple exclamation marks earlier. The lint rules allow at most one exclamation mark and no tag walls.",
+        "fix": "Drop the hashtags. One clean line about the release date does more."
+      }
+    ]
+  },
+  "rewrite": "Luma is scared of the dark. Tonight she's the only light her swarm has. Bring the kid who still checks under the bed; this one's for them. In cinemas this summer."
+}

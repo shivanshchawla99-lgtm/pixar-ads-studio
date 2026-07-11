@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="Fredoka, Trebuchet MS, sans-serif">
+<rect width="1080" height="1080" fill="#3A2418"/>
+<rect x="250" y="420" width="180" height="240" rx="24" fill="#FF6B4A"/><rect x="290" y="350" width="100" height="90" rx="18" fill="#FF6B4A"/><circle cx="320" cy="392" r="12" fill="#101629"/><circle cx="360" cy="392" r="12" fill="#101629"/><rect x="650" y="380" width="200" height="280" rx="24" fill="#3EDBB6"/><rect x="700" y="300" width="100" height="100" rx="18" fill="#3EDBB6"/><circle cx="730" cy="348" r="12" fill="#101629"/><circle cx="770" cy="348" r="12" fill="#101629"/><circle cx="540" cy="180" r="90" fill="#FFC83D" opacity="0.9"/>
+<text x="60" y="748" font-size="68" font-weight="700" fill="#FFC83D"><tspan x="60" dy="0">Two stubborn</tspan><tspan x="60" dy="76">robots. One</tspan><tspan x="60" dy="76">junkyard.</tspan></text>
+<text x="60" y="1000" font-size="26" fill="#F5F1E8" opacity="0.75">WRENCH &amp; RIVET · in cinemas this spring</text>
+<text x="940" y="1002" font-size="30" font-weight="700" fill="#FFC83D">PAS</text>
+<text x="826" y="1030" font-size="15" fill="#F5F1E8" opacity="0.45">unofficial concept</text>
+</svg>

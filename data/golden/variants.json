@@ -1,0 +1,45 @@
+{
+  "input": {
+    "film": "Luma",
+    "brief": "Opening-weekend push aimed at parents planning the family weekend",
+    "audience": "Weekend Planner Priya — parents 28-45"
+  },
+  "variants": [
+    {
+      "hook": "Bring the kid who still checks under the bed.",
+      "primary_text": "Luma is scared of the dark too. This summer she becomes the light her whole swarm needs.",
+      "cta": "Get family tickets",
+      "scores": { "Story & heart": 95, "Claim validity": 95, "Brand voice": 95, "No-slop": 90 },
+      "overall": 93,
+      "verdict": "Winner. A named fear, a named character, an invitation written to one parent. Nothing to cut.",
+      "winner": true
+    },
+    {
+      "hook": "The dark is big. She is small. Come anyway.",
+      "primary_text": "A firefly who's afraid of the dark has one night to guide everyone home. For every family with a hallway light left on.",
+      "cta": "See showtimes",
+      "scores": { "Story & heart": 90, "Claim validity": 95, "Brand voice": 90, "No-slop": 85 },
+      "overall": 88,
+      "verdict": "Strong. The three-beat hook flirts with a power-list rhythm; the second sentence earns it back.",
+      "winner": false
+    },
+    {
+      "hook": "This summer's brightest family night out.",
+      "primary_text": "Luma lights up the big screen with laughter and heart for all ages. A magical adventure the whole family will love.",
+      "cta": "Book now",
+      "scores": { "Story & heart": 40, "Claim validity": 80, "Brand voice": 45, "No-slop": 40 },
+      "overall": 42,
+      "verdict": "Any animated film could run this. 'Magical adventure the whole family will love' fails the prove-it test twice.",
+      "winner": false
+    },
+    {
+      "hook": "Critics are calling Luma an instant classic!",
+      "primary_text": "Don't miss the unforgettable event of the summer — guaranteed fun for everyone!",
+      "cta": "Don't miss out",
+      "scores": { "Story & heart": 20, "Claim validity": 5, "Brand voice": 15, "No-slop": 10 },
+      "overall": 7,
+      "verdict": "Invented critic consensus, banned words, em dash, desperation CTA. This is the control sample.",
+      "winner": false
+    }
+  ]
+}

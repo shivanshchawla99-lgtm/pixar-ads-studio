@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+/* Premiere-night theme. Hex values mirror pixar-brand.json colours 1:1 — change both together. */
+@theme {
+  --color-midnight: #101629;
+  --color-panel: #1A2140;
+  --color-panel-2: #222A52;
+  --color-paper: #F5F1E8;
+  --color-lamplight: #FFC83D;
+  --color-lamplight-dark: #E5AC1B;
+  --color-ember: #FF6B4A;
+  --color-sky: #5AC8FA;
+  --color-teal: #3EDBB6;
+  --color-rose: #FF4E6A;
+  --color-violet: #8A7CFF;
+  --font-display: "Fredoka", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-midnight);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.005em;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-lamplight) 45%, transparent);
+  color: var(--color-midnight);
+}
+
+.tabular { font-variant-numeric: tabular-nums; }
+
+:root { --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* Star-field backdrop for hero sections */
+.starfield {
+  background-image:
+    radial-gradient(1px 1px at 12% 24%, rgba(245,241,232,0.7) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 68% 12%, rgba(245,241,232,0.5) 50%, transparent 51%),
+    radial-gradient(1px 1px at 84% 42%, rgba(245,241,232,0.6) 50%, transparent 51%),
+    radial-gradient(1px 1px at 32% 66%, rgba(245,241,232,0.4) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 52% 84%, rgba(245,241,232,0.5) 50%, transparent 51%),
+    radial-gradient(1px 1px at 92% 78%, rgba(245,241,232,0.45) 50%, transparent 51%),
+    radial-gradient(1px 1px at 8% 88%, rgba(245,241,232,0.4) 50%, transparent 51%);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 300ms var(--ease-out-strong) both; }
+
+@keyframes toastIn {
+  from { opacity: 0; transform: translateY(8px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.toast-in { animation: toastIn 250ms var(--ease-out-strong) both; }
+
+/* Projector-beam intro: a light sweep instead of the old colour curtain */
+@keyframes beamSweep {
+  from { transform: translateX(-120%) skewX(-12deg); opacity: 1; }
+  to { transform: translateX(220%) skewX(-12deg); opacity: 0; }
+}
+.beam { animation: beamSweep 1100ms var(--ease-out-strong) both; }
+
+@keyframes irisOut {
+  from { clip-path: circle(0% at 50% 50%); }
+  to { clip-path: circle(120% at 50% 50%); }
+}
+.iris-in { animation: irisOut 900ms var(--ease-out-strong) both; }
+
+@keyframes floaty {
+  from { transform: translateY(0) rotate(-2deg); }
+  to { transform: translateY(-14px) rotate(2deg); }
+}
+.float-slow { animation: floaty 6s ease-in-out infinite alternate; }
+.float-slower { animation: floaty 8s ease-in-out infinite alternate-reverse; }
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+.twinkle { animation: twinkle 3.2s ease-in-out infinite; }
+
+@keyframes marqueeX { to { transform: translateX(-50%); } }
+.marquee-track { animation: marqueeX 30s linear infinite; }
+
+@keyframes wordUp {
+  from { opacity: 0; transform: translateY(0.5em); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.word-up { display: inline-block; animation: wordUp 600ms var(--ease-out-strong) both; }
+
+@keyframes lampGlow {
+  0%, 100% { text-shadow: 0 0 18px rgba(255,200,61,0.55); color: var(--color-lamplight); }
+  50% { text-shadow: 0 0 34px rgba(255,200,61,0.9); color: #FFDD80; }
+}
+.animate-lamplight { animation: lampGlow 4s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up, .toast-in, .word-up, .iris-in { animation-duration: 0.01ms; }
+  .beam { display: none; }
+  .float-slow, .float-slower, .marquee-track, .twinkle, .animate-lamplight { animation: none; }
+  * { transition-duration: 0.01ms !important; }
+}

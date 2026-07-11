@@ -1,0 +1,100 @@
+{
+  "films": {
+    "Luma": {
+      "personas": [
+        {
+          "name": "Weekend Planner Priya",
+          "segment": "Parents 28-45 planning the family weekend",
+          "quote_basis": "My daughter is terrified of the dark and she walked out asking for a firefly nightlight.",
+          "wants": "A film that's genuinely good for her, not just quiet kids for 100 minutes.",
+          "fears": "Wasting the one family outing of the week on something forgettable.",
+          "media": "Instagram after bedtime, school WhatsApp groups, local cinema emails",
+          "winning_hooks": ["Bring the kid who still checks under the bed.", "Nightlights sold separately."],
+          "targeting": "Meta: parents of 4-9s, weekend evening delivery, family-bundle CTA; partner with school-holiday calendars."
+        },
+        {
+          "name": "Grown-Up Greta",
+          "segment": "Nostalgic adults 25-40, no kids in tow",
+          "quote_basis": "Went in expecting a kids film about bugs. Got a film about my own anxiety.",
+          "wants": "Permission to see it opening weekend without feeling like a tourist.",
+          "fears": "Being marketed to like a toddler.",
+          "media": "Letterboxd, X film threads, late-night YouTube video essays",
+          "winning_hooks": ["You were never really afraid of the dark."],
+          "targeting": "Letterboxd + film-podcast spots, evening showtimes creative, zero 'family fun' language."
+        },
+        {
+          "name": "Edit-Feed Eli",
+          "segment": "Teens who discover films through edits and memes",
+          "quote_basis": "That single warm light drifting over the dark field is going to be on posters forever.",
+          "wants": "One image worth reposting before anyone else finds it.",
+          "fears": "Liking something that tries too hard to be liked.",
+          "media": "TikTok, Instagram Reels, Discord servers",
+          "winning_hooks": ["One small light. One long night."],
+          "targeting": "Vertical 9:16 poster-pure assets, no voiceover, sound-on score moment; let the frame speak."
+        }
+      ]
+    },
+    "The Deep End": {
+      "personas": [
+        {
+          "name": "Coach-Quote Casey",
+          "segment": "Kids 8-12 and the parents who hear about it at dinner",
+          "quote_basis": "My 9 year old has quoted the coach every day since.",
+          "wants": "The funny one. The one their friends are quoting.",
+          "fears": "Missing the joke everyone has on Monday.",
+          "media": "YouTube Kids, playground word of mouth, parents' feeds",
+          "winning_hooks": ["Warning: contains ink."],
+          "targeting": "15s gag-led cutdowns, YouTube pre-roll on kids' swim and gaming content."
+        },
+        {
+          "name": "Masked Maya",
+          "segment": "Teens and adults who ever hid in plain sight",
+          "quote_basis": "It's really about masking. I did not expect a swim-team comedy to get that so right.",
+          "wants": "To feel seen without being lectured.",
+          "fears": "A serious theme played for cheap laughs.",
+          "media": "TikTok, Tumblr revival threads, group chats",
+          "winning_hooks": ["He can imitate anyone. Except himself."],
+          "targeting": "Quote-card creatives from the finale line, community-led, never explain the metaphor in the ad."
+        }
+      ]
+    },
+    "Wrench & Rivet": {
+      "personas": [
+        {
+          "name": "Fix-It Frank",
+          "segment": "Makers, mechanics, and everyone's dad",
+          "quote_basis": "First film that gets why people love repairing things.",
+          "wants": "Craft respected on screen.",
+          "fears": "Robots as disposable joke machines.",
+          "media": "YouTube restoration channels, Facebook, radio",
+          "winning_hooks": ["For everyone who fixes what others throw away."],
+          "targeting": "Pre-roll on restoration/DIY channels; Father's-day-adjacent timing; workshop-poster print run."
+        },
+        {
+          "name": "Double-Feature Dana",
+          "segment": "Families with kids 6-11 wanting the fun one",
+          "quote_basis": "Kids loved the tool jokes.",
+          "wants": "Laughs first, feelings smuggled in.",
+          "fears": "A lecture about teamwork.",
+          "media": "Instagram, cinema apps, school newsletters",
+          "winning_hooks": ["Two stubborn robots. One junkyard. Zero compromise."],
+          "targeting": "Buddy-banter clips, matinee pricing creative, family bundles."
+        }
+      ]
+    },
+    "Paper Moon": {
+      "personas": [
+        {
+          "name": "Three-Generation Grace",
+          "segment": "Multi-generational bookers: adult children + grandparents",
+          "quote_basis": "Call your grandmother after this one.",
+          "wants": "A film worth an intergenerational outing.",
+          "fears": "Anything cynical or loud.",
+          "media": "Facebook, email, Sunday papers",
+          "winning_hooks": ["One thousand cranes. One promise."],
+          "targeting": "Sunday matinee creative, senior + family pricing shown together, print and radio still matter here."
+        }
+      ]
+    }
+  }
+}
