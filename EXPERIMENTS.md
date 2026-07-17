@@ -44,3 +44,18 @@ Every meaningful design/build decision in the Pixar Ads Studio derivative, with 
 ## The assignment (from /office-hours)
 
 Put the deployed URL in front of 3 real prospects, watch them click unaided, and log where they stall — in this file.
+
+## Design pass 2 — Pixar brand guidelines (2026-07-11)
+
+Re-themed against the supplied brand system, using /design-taste-frontend for the web design and /emil-design-eng for motion.
+
+| Change | Verdict | Why |
+|---|---|---|
+| Emotion palette (Pixar Red CTAs, Midnight Theater, Joy/Purple/Ocean/Ember) | **Winner** | Each tool now carries its own mood colour; red reserved for CTAs + Story Guard, per guidelines |
+| Nunito heavy display (was Fredoka) | **Winner** | Matches the named "bold friendly rounded geometric sans"; no serifs in UI |
+| Cinematic posters: volumetric key light + atmospheric depth + film grain | **Winner** | Honors "lighting is everything" and "texture" without an image-gen tool; stays self-contained |
+| Squash-and-stretch tactile buttons + organic easing + card lift | **Winner** | 12 principles via emil; press feedback + follow-through, reduced-motion honored |
+| Luxo lamp 5-tap → Room A113 concept gallery | **Winner** | Rewards exploration; ref-based counter (state closure counted stale on rapid clicks) |
+| Pizza Planet truck with A113 licence plate in hero parallax | **Winner** | Two easter eggs in one prop, subtle, non-blocking |
+| CSS scroll-driven reveal (`animation-timeline: view()`) | **Loser → replaced** | Left below-fold sections invisible in a flat render; swapped for IntersectionObserver + 1.5s safety net so content is never hidden |
+| Em-dashes in visible copy | **Loser → removed** | Zero-em-dash pre-flight; kept only the one in Story Guard's bad example, which its own feedback teaches about |
