@@ -1,8 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="Fredoka, Trebuchet MS, sans-serif">
-<rect width="1080" height="1080" fill="#3A2418"/>
-<rect x="250" y="420" width="180" height="240" rx="24" fill="#FF6B4A"/><rect x="290" y="350" width="100" height="90" rx="18" fill="#FF6B4A"/><circle cx="320" cy="392" r="12" fill="#101629"/><circle cx="360" cy="392" r="12" fill="#101629"/><rect x="650" y="380" width="200" height="280" rx="24" fill="#3EDBB6"/><rect x="700" y="300" width="100" height="100" rx="18" fill="#3EDBB6"/><circle cx="730" cy="348" r="12" fill="#101629"/><circle cx="770" cy="348" r="12" fill="#101629"/><circle cx="540" cy="180" r="90" fill="#FFC83D" opacity="0.9"/>
-<text x="60" y="748" font-size="68" font-weight="700" fill="#FFC83D"><tspan x="60" dy="0">Two stubborn</tspan><tspan x="60" dy="76">robots. One</tspan><tspan x="60" dy="76">junkyard.</tspan></text>
-<text x="60" y="1000" font-size="26" fill="#F5F1E8" opacity="0.75">WRENCH &amp; RIVET · in cinemas this spring</text>
-<text x="940" y="1002" font-size="30" font-weight="700" fill="#FFC83D">PAS</text>
-<text x="826" y="1030" font-size="15" fill="#F5F1E8" opacity="0.45">unofficial concept</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="Nunito, Trebuchet MS, sans-serif">
+<defs>
+<linearGradient id="atmos" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#2A160C"/>
+  <stop offset="1" stop-color="#120A07"/>
+</linearGradient>
+<radialGradient id="key" cx="0.5" cy="0.2037037037037037" r="0.62">
+  <stop offset="0" stop-color="#D95D39" stop-opacity="0.55"/>
+  <stop offset="0.35" stop-color="#D95D39" stop-opacity="0.16"/>
+  <stop offset="0.7" stop-color="#D95D39" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#D95D39" stop-opacity="0.5"/>
+  <stop offset="1" stop-color="#D95D39" stop-opacity="0"/>
+</linearGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+<filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+</defs>
+<rect width="1080" height="1080" fill="url(#atmos)"/>
+<ellipse cx="540" cy="220" rx="620" ry="620" fill="url(#key)"/>
+<g opacity="0.10"><polygon points="540,220 280,1180 420,1180" fill="url(#ray)"/><polygon points="540,220 460,1180 600,1180" fill="url(#ray)"/><polygon points="540,220 640,1180 780,1180" fill="url(#ray)"/><polygon points="540,220 820,1180 960,1180" fill="url(#ray)"/></g>
+<path d="M0 760 Q 270 690 540 745 T 1080 730 L1080 1080 L0 1080 Z" fill="#0B0B0E"/>
+<rect x="252" y="422" width="176" height="238" rx="24" fill="#20130C"/>
+<rect x="292" y="352" width="98" height="88" rx="18" fill="#D95D39" opacity="0.92"/>
+<circle cx="321" cy="393" r="12" fill="#121212"/><circle cx="361" cy="393" r="12" fill="#121212"/>
+<rect x="652" y="382" width="196" height="278" rx="24" fill="#241009"/>
+<rect x="700" y="302" width="98" height="98" rx="18" fill="#D95D39"/>
+<circle cx="731" cy="349" r="12" fill="#121212"/><circle cx="771" cy="349" r="12" fill="#121212"/>
+<circle cx="540" cy="196" r="86" fill="#F9D71C" opacity="0.9" filter="url(#soft)"/>
+<rect x="0" y="720" width="1080" height="360" fill="#121212" opacity="0.55"/>
+<text x="64" y="728" font-size="70" font-weight="800" letter-spacing="-1" fill="#F9D71C"><tspan x="64" dy="0">Two stubborn</tspan><tspan x="64" dy="78">robots. One</tspan><tspan x="64" dy="78">junkyard.</tspan></text>
+<text x="64" y="1002" font-size="25" fill="#F5F1E8" opacity="0.72">WRENCH &amp; RIVET · in cinemas this spring</text>
+<text x="946" y="1002" font-size="30" font-weight="800" fill="#F9D71C">PAS</text>
+<text x="828" y="1030" font-size="14" fill="#F5F1E8" opacity="0.4">unofficial concept</text>
+
+<rect width="1080" height="1080" filter="url(#grain)" opacity="0.06"/>
 </svg>

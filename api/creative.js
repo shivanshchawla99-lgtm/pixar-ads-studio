@@ -59,7 +59,7 @@ export default async function handler(req, res) {
   // Guardrail fields (background, style, palette, wordmark, strict_rules) are
   // locked in Stage 2, never left to the model. Falls back to the offer/brief
   // if the call hiccups so it never blocks.
-  const ACCENT_NAMES = ['lamplight yellow', 'ember orange', 'sky blue', 'teal', 'rose', 'violet']
+  const ACCENT_NAMES = ['joy yellow', 'brave ember', 'oceanic blue', 'soulful purple']
   const cleanAccent = String(accent || '').toLowerCase().trim()
   const chosenAccent = ACCENT_NAMES.includes(cleanAccent) ? cleanAccent : ''
   let headline = cleanCopy(offer || brief, 80)
@@ -110,8 +110,8 @@ Return ONLY JSON:
   const spec = {
     task: `A finished, ready-to-publish ${platform || 'Instagram'} post for ${brand.brand}, a story-first animation studio`,
     canvas: `exactly ${format.replace('x', ' by ')} pixels (${CANVAS[format] || '1:1 square'})`,
-    background: 'deep midnight blue (#101629), premiere-night mood, flat colour, no gradients',
-    style: 'flat, bold, modern colour-block poster design; silhouettes, abstract motifs and environments only; cinematic and warm, never busy; no outer frame, no drop shadows, no lens flares',
+    background: 'deep Midnight Theater black (#121212), premiere-night mood, cinematic volumetric lighting and a faint film grain, one warm pool of light',
+    style: 'cinematic colour-block poster with real depth and soft volumetric lighting; silhouettes, abstract motifs and environments only; warm and filmic, never busy or clinical; no outer frame, no harsh lens flares',
     colour_rules: brand.image_rules.palette_direction,
     ...(accents.length ? { accent_colours: accents } : {}),
     ...(filmInfo ? { film_motifs: filmInfo.motifs } : {}),
@@ -121,7 +121,7 @@ Return ONLY JSON:
     },
     ...(tag ? { cta_pill: { text: tag, treatment: 'a rounded pill button in lamplight yellow with midnight text, spelled exactly as written' } } : {}),
     shapes: 'a few simple abstract shapes drawn from the film motifs (a glow, grass silhouettes, swim lanes, origami folds), small and purposeful, never filling the frame',
-    wordmark: { text: 'PAS', subtext: 'unofficial concept', placement: 'one corner, small', colour: 'lamplight yellow' },
+    wordmark: { text: 'PAS', subtext: 'unofficial concept', placement: 'one corner, small', colour: 'joy yellow' },
     mood,
     ...(audience ? { audience } : {}),
     ...(imagery ? { motifs: imagery } : {}),

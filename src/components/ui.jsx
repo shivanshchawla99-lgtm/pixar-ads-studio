@@ -22,15 +22,16 @@ export const inputCls =
 
 export function Button({ children, onClick, disabled, variant = 'primary', className = '' }) {
   const styles = {
-    primary: 'bg-lamplight text-midnight hover:bg-lamplight-dark disabled:bg-paper/15 disabled:text-paper/40',
-    soft: 'bg-panel-2 text-paper hover:bg-violet/30 border border-paper/12 disabled:opacity-50',
-    ghost: 'bg-transparent text-lamplight hover:bg-lamplight/10 disabled:opacity-50',
+    primary: 'bg-joy text-midnight hover:bg-joy-dark disabled:bg-paper/15 disabled:text-paper/40',
+    cta: 'bg-red text-white hover:bg-red-dark disabled:bg-paper/15 disabled:text-paper/40 shadow-[0_8px_30px_-8px_rgba(227,24,55,0.6)]',
+    soft: 'bg-panel-2 text-paper hover:bg-purple/30 border border-paper/12 disabled:opacity-50',
+    ghost: 'bg-transparent text-joy hover:bg-joy/10 disabled:opacity-50',
   }
   return (
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`rounded-xl px-4 py-2.5 text-sm font-semibold transition-[transform,background-color,opacity] duration-150 [transition-timing-function:var(--ease-out-strong)] cursor-pointer active:scale-[0.97] disabled:cursor-not-allowed disabled:active:scale-100 ${styles[variant]} ${className}`}
+      className={`tactile rounded-xl px-4 py-2.5 text-sm font-semibold cursor-pointer disabled:cursor-not-allowed ${styles[variant]} ${className}`}
     >
       {children}
     </button>

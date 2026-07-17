@@ -51,27 +51,33 @@
     "avoid": ["content", "IP", "franchise", "synergy", "epic", "insane", "mind-blowing", "instant classic", "must-see event"]
   },
   "colours": {
-    "_note": "Premiere-night palette. Midnight is the canvas, lamplight is the hero accent. These hex values are mirrored 1:1 in src/index.css tokens; change both together.",
-    "midnight": "#101629",
-    "panel": "#1A2140",
+    "_note": "Cinematic emotion palette. Midnight Theater is the canvas; each section borrows one emotion colour to set its mood. Pixar Red is reserved for primary CTAs and high-impact moments. These hex values are mirrored in src/index.css tokens; change both together.",
+    "pixar_red": "#E31837",
+    "midnight_theater": "#121212",
+    "joy_yellow": "#F9D71C",
+    "soulful_purple": "#6B3FA0",
+    "oceanic_blue": "#0077B6",
+    "brave_ember": "#D95D39",
     "paper": "#F5F1E8",
-    "lamplight": "#FFC83D",
-    "ember": "#FF6B4A",
-    "sky": "#5AC8FA",
-    "teal": "#3EDBB6",
-    "rose": "#FF4E6A",
-    "violet": "#8A7CFF"
+    "emotion_map": {
+      "Audience Lab": "oceanic_blue",
+      "Persona Studio": "soulful_purple",
+      "Spark Engine": "joy_yellow",
+      "Poster Studio": "brave_ember",
+      "Screening Room": "joy_yellow",
+      "Story Guard": "pixar_red"
+    }
   },
   "typography": {
-    "headline": "Fredoka, rounded and friendly, the warmth of hand-lettering with the discipline of a grid",
-    "body": "Inter, quiet and legible",
+    "headline": "Nunito, a bold friendly rounded geometric sans (heavy weights). Approachable but structured. Never a serif in UI.",
+    "body": "Inter, quiet and legible at small sizes",
     "social_posts": "Big rounded display headline, one line of body, wordmark small in a corner",
-    "rules": ["Sentence case everywhere", "Never condense or outline the headline face", "One typeface pairing, no exceptions"]
+    "rules": ["Sentence case everywhere", "Never condense or outline the headline face", "Serifs only for editorial or storybook quotes, never UI", "One typeface pairing, no exceptions"]
   },
-  "look_and_feel": "Premiere night: deep midnight blues, one warm pool of lamplight, characters small against big worlds. Flat colour-block posters with a single strong silhouette beat busy collages every time.",
+  "look_and_feel": "Cinematic premiere night: a rich Midnight Theater canvas, one warm pool of volumetric light, characters small against big worlds. Depth and grain over flat blocks; lighting does the emotional work.",
   "image_rules": {
-    "signature_layout": "One hero silhouette or motif against a flat midnight or accent field, headline set big in the rounded display face, wordmark small in one corner.",
-    "palette_direction": "Midnight blue canvas, lamplight yellow as the hero accent, at most two supporting accents (ember, sky, teal, rose, violet). Flat colour-blocks, no gradients, no lens flares.",
+    "signature_layout": "One hero silhouette or motif lit by a single warm key light against a Midnight Theater field, headline set big in the rounded display face, wordmark small in one corner.",
+    "palette_direction": "Midnight Theater canvas with cinematic volumetric lighting and a hint of film grain. One emotion colour leads per asset (Joy Yellow, Oceanic Blue, Brave Ember or Soulful Purple); Pixar Red only for a single high-impact accent. Depth and soft glows, never harsh lens flares.",
     "ai_may_generate": ["Flat colour-block poster layouts", "Abstract shapes, silhouettes, environments, props", "Typography-led compositions"],
     "ai_must_not_generate": ["Off-model versions of film characters", "Photorealistic humans presented as cast or fans", "Fake critic quotes, award laurels, or star ratings", "Other studios' characters or styles"],
     "people": "Characters appear only as approved silhouettes or supplied art. AI never invents a character's face; audiences spot off-model art instantly and it reads as bootleg.",

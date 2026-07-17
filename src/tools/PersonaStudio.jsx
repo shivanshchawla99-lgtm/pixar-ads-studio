@@ -85,7 +85,7 @@ export default function PersonaStudio() {
                     ))}
                   </div>
                   <button
-                    onClick={() => sendTo('/screening', { brief: `${film} ad for ${p.name} (${p.segment}). They want: ${p.wants}`, film, audience: `${p.name} — ${p.segment}` })}
+                    onClick={() => sendTo('/screening', { brief: `${film} ad for ${p.name} (${p.segment}). They want: ${p.wants}`, film, audience: `${p.name}, ${p.segment}` })}
                     className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-teal hover:underline cursor-pointer"
                   >
                     Test ad variants for this persona

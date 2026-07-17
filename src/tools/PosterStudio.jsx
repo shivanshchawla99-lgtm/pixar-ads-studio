@@ -8,7 +8,7 @@ import golden from '../../data/golden/creative.json'
 const PLATFORMS = ['', 'Instagram post', 'Instagram story', 'Facebook ad', 'LinkedIn post', 'Cinema lobby screen']
 
 // Maps to the JSON brief's accent_colours. 'auto' lets the model pick 1-2 on brand.
-const ACCENT_OPTIONS = ['auto', 'lamplight yellow', 'ember orange', 'sky blue', 'teal', 'rose', 'violet']
+const ACCENT_OPTIONS = ['auto', 'joy yellow', 'brave ember', 'oceanic blue', 'soulful purple']
 
 // Fixed display order for the template gallery groups.
 const CATEGORIES = ['Story-first launches', 'Family weekend pushes', 'Grown-up angles']
@@ -24,7 +24,7 @@ function normalizeToSize(dataUrl, format) {
       const canvas = document.createElement('canvas')
       canvas.width = w; canvas.height = h
       const ctx = canvas.getContext('2d')
-      ctx.fillStyle = '#101629'; ctx.fillRect(0, 0, w, h)
+      ctx.fillStyle = '#121212'; ctx.fillRect(0, 0, w, h)
       const scale = Math.min(w / img.width, h / img.height)
       const dw = img.width * scale, dh = img.height * scale
       ctx.drawImage(img, (w - dw) / 2, (h - dh) / 2, dw, dh)

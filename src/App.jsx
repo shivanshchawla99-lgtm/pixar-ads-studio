@@ -35,7 +35,7 @@ export default function App() {
   if (!tool) return <Home />
 
   return (
-    <div className="flex min-h-screen flex-col lg:flex-row bg-midnight">
+    <div className="film-grain flex min-h-screen flex-col lg:flex-row bg-midnight">
       <aside className="shrink-0 bg-panel border-b lg:border-b-0 lg:border-r border-paper/8 flex flex-col lg:w-64">
         <div className="px-5 pt-5 pb-3 lg:px-6 lg:pt-7 lg:pb-6">
           <a href="#/" className="block">
@@ -108,7 +108,7 @@ export default function App() {
         </main>
         <div className="px-4 sm:px-8 pb-8 max-w-6xl w-full flex justify-between text-[11px] text-paper/35">
           <span>One brand file under every tool. Human-reviewed, always.</span>
-          <span>Unofficial fan concept — films are fictional</span>
+          <span>Unofficial fan concept. Films are fictional</span>
         </div>
       </div>
     </div>

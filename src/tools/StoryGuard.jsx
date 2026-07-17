@@ -10,7 +10,7 @@ const TYPES = ['Instagram caption', 'Poster tagline', 'Newsletter', 'LinkedIn po
 const MAX_CHARS = 4000
 const TIERS = brand.story_guard_scoring.tiers
 const CATEGORIES = brand.story_guard_scoring.categories.map((c) => c.name)
-const DOT_COLORS = ['bg-lamplight', 'bg-sky', 'bg-teal', 'bg-rose']
+const DOT_COLORS = ['bg-joy', 'bg-sky', 'bg-ember', 'bg-red']
 
 export default function StoryGuard() {
   const [type, setType] = useState(goldenBad.input.type)
@@ -155,7 +155,7 @@ export default function StoryGuard() {
           </div>
           {numFixed > 0 && (
             <p className="text-xs text-paper/50 mt-2">
-              Estimated score if {numFixed} fix{numFixed === 1 ? ' is' : 'es are'} applied — a projection, not a model score. Re-validate to confirm.
+              Estimated score if {numFixed} fix{numFixed === 1 ? ' is' : 'es are'} applied. A projection, not a model score. Re-validate to confirm.
             </p>
           )}
 

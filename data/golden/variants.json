@@ -2,7 +2,7 @@
   "input": {
     "film": "Luma",
     "brief": "Opening-weekend push aimed at parents planning the family weekend",
-    "audience": "Weekend Planner Priya — parents 28-45"
+    "audience": "Weekend Planner Priya, parents 28-45"
   },
   "variants": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "hook": "Critics are calling Luma an instant classic!",
-      "primary_text": "Don't miss the unforgettable event of the summer — guaranteed fun for everyone!",
+      "primary_text": "Don't miss the unforgettable event of the summer. Guaranteed fun for everyone!",
       "cta": "Don't miss out",
       "scores": { "Story & heart": 20, "Claim validity": 5, "Brand voice": 15, "No-slop": 10 },
       "overall": 7,

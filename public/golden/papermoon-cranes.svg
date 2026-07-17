@@ -1,8 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="Fredoka, Trebuchet MS, sans-serif">
-<rect width="1080" height="1080" fill="#101629"/>
-<circle cx="97" cy="61" r="2.2" fill="#F5F1E8" opacity="0.4"/><circle cx="194" cy="122" r="2.9" fill="#F5F1E8" opacity="0.55"/><circle cx="291" cy="183" r="1.5" fill="#F5F1E8" opacity="0.7"/><circle cx="388" cy="244" r="2.2" fill="#F5F1E8" opacity="0.25"/><circle cx="485" cy="305" r="2.9" fill="#F5F1E8" opacity="0.4"/><circle cx="582" cy="366" r="1.5" fill="#F5F1E8" opacity="0.55"/><circle cx="679" cy="427" r="2.2" fill="#F5F1E8" opacity="0.7"/><circle cx="776" cy="488" r="2.9" fill="#F5F1E8" opacity="0.25"/><circle cx="873" cy="29" r="1.5" fill="#F5F1E8" opacity="0.4"/><circle cx="970" cy="90" r="2.2" fill="#F5F1E8" opacity="0.55"/><circle cx="1067" cy="151" r="2.9" fill="#F5F1E8" opacity="0.7"/><circle cx="84" cy="212" r="1.5" fill="#F5F1E8" opacity="0.25"/><circle cx="181" cy="273" r="2.2" fill="#F5F1E8" opacity="0.4"/><circle cx="278" cy="334" r="2.9" fill="#F5F1E8" opacity="0.55"/><circle cx="375" cy="395" r="1.5" fill="#F5F1E8" opacity="0.7"/><circle cx="472" cy="456" r="2.2" fill="#F5F1E8" opacity="0.25"/><circle cx="569" cy="517" r="2.9" fill="#F5F1E8" opacity="0.4"/><circle cx="666" cy="58" r="1.5" fill="#F5F1E8" opacity="0.55"/><circle cx="763" cy="119" r="2.2" fill="#F5F1E8" opacity="0.7"/><circle cx="860" cy="180" r="2.9" fill="#F5F1E8" opacity="0.25"/><circle cx="957" cy="241" r="1.5" fill="#F5F1E8" opacity="0.4"/><circle cx="1054" cy="302" r="2.2" fill="#F5F1E8" opacity="0.55"/><circle cx="71" cy="363" r="2.9" fill="#F5F1E8" opacity="0.7"/><circle cx="168" cy="424" r="1.5" fill="#F5F1E8" opacity="0.25"/><circle cx="265" cy="485" r="2.2" fill="#F5F1E8" opacity="0.4"/><circle cx="362" cy="26" r="2.9" fill="#F5F1E8" opacity="0.55"/><circle cx="459" cy="87" r="1.5" fill="#F5F1E8" opacity="0.7"/><circle cx="556" cy="148" r="2.2" fill="#F5F1E8" opacity="0.25"/><circle cx="653" cy="209" r="2.9" fill="#F5F1E8" opacity="0.4"/><circle cx="750" cy="270" r="1.5" fill="#F5F1E8" opacity="0.55"/><circle cx="847" cy="331" r="2.2" fill="#F5F1E8" opacity="0.7"/><circle cx="944" cy="392" r="2.9" fill="#F5F1E8" opacity="0.25"/><circle cx="1041" cy="453" r="1.5" fill="#F5F1E8" opacity="0.4"/><circle cx="58" cy="514" r="2.2" fill="#F5F1E8" opacity="0.55"/><circle cx="155" cy="55" r="2.9" fill="#F5F1E8" opacity="0.7"/><circle cx="252" cy="116" r="1.5" fill="#F5F1E8" opacity="0.25"/><circle cx="349" cy="177" r="2.2" fill="#F5F1E8" opacity="0.4"/><circle cx="446" cy="238" r="2.9" fill="#F5F1E8" opacity="0.55"/><circle cx="543" cy="299" r="1.5" fill="#F5F1E8" opacity="0.7"/><circle cx="700" cy="360" r="220" fill="#F5F1E8" opacity="0.95"/><path d="M600 400 L680 340 L760 380 L700 300 Z" fill="#101629"/><path d="M620 420 L700 360 L790 400 L720 320 Z" fill="#8A7CFF" opacity="0.0"/><path d="M560 430 L640 380 L700 420 L660 340 Z" fill="#1A2140"/>
-<text x="60" y="748" font-size="68" font-weight="700" fill="#F5F1E8"><tspan x="60" dy="0">One thousand</tspan><tspan x="60" dy="76">cranes. One</tspan><tspan x="60" dy="76">promise.</tspan></text>
-<text x="60" y="1000" font-size="26" fill="#F5F1E8" opacity="0.75">PAPER MOON · in cinemas this winter</text>
-<text x="940" y="1002" font-size="30" font-weight="700" fill="#FFC83D">PAS</text>
-<text x="826" y="1030" font-size="15" fill="#F5F1E8" opacity="0.45">unofficial concept</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="Nunito, Trebuchet MS, sans-serif">
+<defs>
+<linearGradient id="atmos" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#1B1430"/>
+  <stop offset="1" stop-color="#0C0913"/>
+</linearGradient>
+<radialGradient id="key" cx="0.6481481481481481" cy="0.3333333333333333" r="0.62">
+  <stop offset="0" stop-color="#6B3FA0" stop-opacity="0.55"/>
+  <stop offset="0.35" stop-color="#6B3FA0" stop-opacity="0.16"/>
+  <stop offset="0.7" stop-color="#6B3FA0" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#6B3FA0" stop-opacity="0.5"/>
+  <stop offset="1" stop-color="#6B3FA0" stop-opacity="0"/>
+</linearGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+<filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+</defs>
+<rect width="1080" height="1080" fill="url(#atmos)"/>
+<ellipse cx="700" cy="360" rx="620" ry="620" fill="url(#key)"/>
+<g opacity="0.10"><polygon points="700,360 440,1180 580,1180" fill="url(#ray)"/><polygon points="700,360 620,1180 760,1180" fill="url(#ray)"/><polygon points="700,360 800,1180 940,1180" fill="url(#ray)"/><polygon points="700,360 980,1180 1120,1180" fill="url(#ray)"/></g>
+<circle cx="700" cy="360" r="222" fill="#EFE7D2" opacity="0.10" filter="url(#soft)"/>
+<circle cx="700" cy="360" r="210" fill="#E9E2CE"/>
+<path d="M560 430 L640 380 L700 420 L660 340 Z" fill="#1C1630"/>
+<path d="M600 400 L680 340 L760 380 L700 300 Z" fill="#241C3B"/>
+<rect x="0" y="720" width="1080" height="360" fill="#121212" opacity="0.55"/>
+<text x="64" y="728" font-size="70" font-weight="800" letter-spacing="-1" fill="#F5F1E8"><tspan x="64" dy="0">One thousand</tspan><tspan x="64" dy="78">cranes. One</tspan><tspan x="64" dy="78">promise.</tspan></text>
+<text x="64" y="1002" font-size="25" fill="#F5F1E8" opacity="0.72">PAPER MOON · in cinemas this winter</text>
+<text x="946" y="1002" font-size="30" font-weight="800" fill="#F9D71C">PAS</text>
+<text x="828" y="1030" font-size="14" fill="#F5F1E8" opacity="0.4">unofficial concept</text>
+
+<rect width="1080" height="1080" filter="url(#grain)" opacity="0.06"/>
 </svg>

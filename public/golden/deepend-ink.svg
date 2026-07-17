@@ -1,8 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="Fredoka, Trebuchet MS, sans-serif">
-<rect width="1080" height="1080" fill="#5AC8FA"/>
-<circle cx="700" cy="420" r="230" fill="#101629"/><circle cx="520" cy="560" r="90" fill="#101629"/><circle cx="850" cy="580" r="60" fill="#101629"/><circle cx="640" cy="260" r="55" fill="#101629"/>
-<text x="60" y="824" font-size="68" font-weight="700" fill="#101629"><tspan x="60" dy="0">Warning:</tspan><tspan x="60" dy="76">contains ink.</tspan></text>
-<text x="60" y="1000" font-size="26" fill="#F5F1E8" opacity="0.75">THE DEEP END · bring the whole lane</text>
-<text x="940" y="1002" font-size="30" font-weight="700" fill="#FFC83D">PAS</text>
-<text x="826" y="1030" font-size="15" fill="#F5F1E8" opacity="0.45">unofficial concept</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="Nunito, Trebuchet MS, sans-serif">
+<defs>
+<linearGradient id="atmos" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#0C3350"/>
+  <stop offset="1" stop-color="#08202F"/>
+</linearGradient>
+<radialGradient id="key" cx="0.3333333333333333" cy="0.2777777777777778" r="0.62">
+  <stop offset="0" stop-color="#0077B6" stop-opacity="0.55"/>
+  <stop offset="0.35" stop-color="#0077B6" stop-opacity="0.16"/>
+  <stop offset="0.7" stop-color="#0077B6" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#0077B6" stop-opacity="0.5"/>
+  <stop offset="1" stop-color="#0077B6" stop-opacity="0"/>
+</linearGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+<filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+</defs>
+<rect width="1080" height="1080" fill="url(#atmos)"/>
+<ellipse cx="360" cy="300" rx="620" ry="620" fill="url(#key)"/>
+<g opacity="0.10"><polygon points="360,300 100,1180 240,1180" fill="url(#ray)"/><polygon points="360,300 280,1180 420,1180" fill="url(#ray)"/><polygon points="360,300 460,1180 600,1180" fill="url(#ray)"/><polygon points="360,300 640,1180 780,1180" fill="url(#ray)"/></g>
+<circle cx="700" cy="420" r="230" fill="#08131E" filter="url(#soft)"/>
+<circle cx="700" cy="420" r="220" fill="#0A1622"/>
+<circle cx="520" cy="560" r="86" fill="#0A1622"/><circle cx="852" cy="580" r="58" fill="#0A1622"/><circle cx="640" cy="262" r="52" fill="#0A1622"/>
+<rect x="0" y="720" width="1080" height="360" fill="#121212" opacity="0.55"/>
+<text x="64" y="806" font-size="70" font-weight="800" letter-spacing="-1" fill="#7FD4FF"><tspan x="64" dy="0">Warning:</tspan><tspan x="64" dy="78">contains ink.</tspan></text>
+<text x="64" y="1002" font-size="25" fill="#F5F1E8" opacity="0.72">THE DEEP END · bring the whole lane</text>
+<text x="946" y="1002" font-size="30" font-weight="800" fill="#F9D71C">PAS</text>
+<text x="828" y="1030" font-size="14" fill="#F5F1E8" opacity="0.4">unofficial concept</text>
+
+<rect width="1080" height="1080" filter="url(#grain)" opacity="0.06"/>
 </svg>

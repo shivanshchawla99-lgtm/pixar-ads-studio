@@ -1,8 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="Fredoka, Trebuchet MS, sans-serif">
-<rect width="1080" height="1080" fill="#191524"/>
-<circle cx="820" cy="240" r="130" fill="#F5F1E8" opacity="0.9"/><rect x="200" y="640" width="680" height="18" rx="9" fill="#3A3350"/><path d="M420 560 L540 480 L640 550 L560 470 Z" fill="#FFC83D"/><circle cx="540" cy="620" r="150" fill="#FFC83D" opacity="0.08"/>
-<text x="60" y="824" font-size="68" font-weight="700" fill="#FFC83D"><tspan x="60" dy="0">Fold. Repeat.</tspan><tspan x="60" dy="76">Remember.</tspan></text>
-<text x="60" y="1000" font-size="26" fill="#F5F1E8" opacity="0.75">PAPER MOON · in cinemas this winter</text>
-<text x="940" y="1002" font-size="30" font-weight="700" fill="#FFC83D">PAS</text>
-<text x="826" y="1030" font-size="15" fill="#F5F1E8" opacity="0.45">unofficial concept</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="Nunito, Trebuchet MS, sans-serif">
+<defs>
+<linearGradient id="atmos" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#1A1330"/>
+  <stop offset="1" stop-color="#0B0812"/>
+</linearGradient>
+<radialGradient id="key" cx="0.5" cy="0.5185185185185185" r="0.62">
+  <stop offset="0" stop-color="#6B3FA0" stop-opacity="0.55"/>
+  <stop offset="0.35" stop-color="#6B3FA0" stop-opacity="0.16"/>
+  <stop offset="0.7" stop-color="#6B3FA0" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#6B3FA0" stop-opacity="0.5"/>
+  <stop offset="1" stop-color="#6B3FA0" stop-opacity="0"/>
+</linearGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+<filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+</defs>
+<rect width="1080" height="1080" fill="url(#atmos)"/>
+<ellipse cx="540" cy="560" rx="620" ry="620" fill="url(#key)"/>
+<g opacity="0.10"><polygon points="540,560 280,1180 420,1180" fill="url(#ray)"/><polygon points="540,560 460,1180 600,1180" fill="url(#ray)"/><polygon points="540,560 640,1180 780,1180" fill="url(#ray)"/><polygon points="540,560 820,1180 960,1180" fill="url(#ray)"/></g>
+<circle cx="820" cy="240" r="128" fill="#E9E2CE" opacity="0.92" filter="url(#soft)"/>
+<circle cx="820" cy="240" r="120" fill="#E9E2CE"/>
+<rect x="200" y="640" width="680" height="16" rx="8" fill="#2A2240"/>
+<path d="M420 560 L540 480 L640 550 L560 470 Z" fill="#F9D71C"/>
+<circle cx="540" cy="620" r="150" fill="#F9D71C" opacity="0.08" filter="url(#soft)"/>
+<rect x="0" y="720" width="1080" height="360" fill="#121212" opacity="0.55"/>
+<text x="64" y="806" font-size="70" font-weight="800" letter-spacing="-1" fill="#F9D71C"><tspan x="64" dy="0">Fold. Repeat.</tspan><tspan x="64" dy="78">Remember.</tspan></text>
+<text x="64" y="1002" font-size="25" fill="#F5F1E8" opacity="0.72">PAPER MOON · in cinemas this winter</text>
+<text x="946" y="1002" font-size="30" font-weight="800" fill="#F9D71C">PAS</text>
+<text x="828" y="1030" font-size="14" fill="#F5F1E8" opacity="0.4">unofficial concept</text>
+
+<rect width="1080" height="1080" filter="url(#grain)" opacity="0.06"/>
 </svg>
