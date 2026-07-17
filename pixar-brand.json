@@ -74,7 +74,7 @@
     "social_posts": "Big rounded display headline, one line of body, wordmark small in a corner",
     "rules": ["Sentence case everywhere", "Never condense or outline the headline face", "Serifs only for editorial or storybook quotes, never UI", "One typeface pairing, no exceptions"]
   },
-  "look_and_feel": "Cinematic premiere night: a rich Midnight Theater canvas, one warm pool of volumetric light, characters small against big worlds. Depth and grain over flat blocks; lighting does the emotional work.",
+  "look_and_feel": "A sunlit studio gallery: warm off-white canvas with a soft pool of Joy Yellow light, and the cinematic Midnight Theater artwork hung against it like framed one-sheets. The UI stays light and quiet; the posters carry the darkness and the drama. Lighting does the emotional work in both.",
   "image_rules": {
     "signature_layout": "One hero silhouette or motif lit by a single warm key light against a Midnight Theater field, headline set big in the rounded display face, wordmark small in one corner.",
     "palette_direction": "Midnight Theater canvas with cinematic volumetric lighting and a hint of film grain. One emotion colour leads per asset (Joy Yellow, Oceanic Blue, Brave Ember or Soulful Purple); Pixar Red only for a single high-impact accent. Depth and soft glows, never harsh lens flares.",

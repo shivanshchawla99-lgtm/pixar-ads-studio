@@ -4,7 +4,7 @@ import { runLive } from '../lib/api.js'
 import { sendTo } from '../lib/handoff.js'
 import golden from '../../data/golden/ideas.json'
 
-const QUOTE_BORDERS = ['border-l-lamplight', 'border-l-sky', 'border-l-teal', 'border-l-rose']
+const QUOTE_BORDERS = ['border-l-joy-dark', 'border-l-sky', 'border-l-teal', 'border-l-rose']
 
 export default function SparkEngine() {
   const [ideas, setIdeas] = useState(golden.ideas)
@@ -40,39 +40,39 @@ export default function SparkEngine() {
           <SourceBadge live={live} />
         </div>
 
-        <div className="border-t border-paper/10">
+        <div className="border-t border-ink/10">
           {ideas.map((idea, i) => {
             const accent = ACCENTS[i % ACCENTS.length]
             return (
               <div
                 key={`${idea.title}-${i}`}
                 style={{ animationDelay: `${i * 40}ms` }}
-                className="fade-up py-5 border-b border-paper/10 px-4 -mx-4 rounded-none group cursor-default transition-colors hover:bg-panel"
+                className="fade-up py-5 border-b border-ink/10 px-4 -mx-4 rounded-none group cursor-default transition-colors hover:bg-panel"
               >
                 <div className="flex items-start justify-between gap-3">
-                  <h3 className="flex-1 min-w-0 font-display font-semibold text-paper text-lg group-hover:text-lamplight transition-colors">
+                  <h3 className="flex-1 min-w-0 font-display font-semibold text-ink text-lg group-hover:text-joy-deep transition-colors">
                     {idea.title}
-                    {idea.film && <span className="ml-2 text-xs font-sans font-semibold text-paper/45">{idea.film}</span>}
+                    {idea.film && <span className="ml-2 text-xs font-sans font-semibold text-ink/45">{idea.film}</span>}
                   </h3>
                   <span className={`shrink-0 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider whitespace-nowrap ${accent.bg} ${accent.text}`}>
                     {idea.channel}
                   </span>
                 </div>
                 {idea.why_it_matters && (
-                  <p className="text-sm text-paper/70 mt-3">
+                  <p className="text-sm text-ink/70 mt-3">
                     <span className={`font-semibold ${accent.text}`}>Why it matters: </span>{idea.why_it_matters}
                   </p>
                 )}
-                <p className="text-sm text-paper/70 mt-2">
+                <p className="text-sm text-ink/70 mt-2">
                   <span className={`font-semibold ${accent.text}`}>The angle: </span>{idea.angle}
                 </p>
-                <div className={`mt-3 pl-4 border-l-2 ${QUOTE_BORDERS[i % QUOTE_BORDERS.length]} bg-panel group-hover:bg-panel-2 py-2 pr-2 text-sm italic font-medium text-paper/80 rounded-r-lg`}>
+                <div className={`mt-3 pl-4 border-l-2 ${QUOTE_BORDERS[i % QUOTE_BORDERS.length]} bg-panel group-hover:bg-panel-2 py-2 pr-2 text-sm italic font-medium text-ink/80 rounded-r-lg`}>
                   “{idea.hook}”
                 </div>
                 <div className="mt-3 flex flex-wrap items-center gap-4">
                   <button
                     onClick={() => sendTo('/poster', { brief: `${idea.title}: ${idea.angle}`, film: idea.film || '', cta: '' })}
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-lamplight hover:underline cursor-pointer"
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-joy-deep hover:underline cursor-pointer"
                   >
                     Send to Poster Studio
                     <span className="material-symbols-outlined" style={{ fontSize: 14 }}>east</span>
@@ -84,7 +84,7 @@ export default function SparkEngine() {
                     Test variants in Screening Room
                     <span className="material-symbols-outlined" style={{ fontSize: 14 }}>east</span>
                   </button>
-                  {idea.source && <span className="text-xs text-paper/40">Grounded in: {idea.source}</span>}
+                  {idea.source && <span className="text-xs text-ink/40">Grounded in: {idea.source}</span>}
                 </div>
               </div>
             )

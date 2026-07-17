@@ -134,12 +134,12 @@ export default function StoryGuard() {
           </Button>
           {busy && <Spinner label="Checking story, claims and slop…" />}
         </div>
-        <p className="text-xs text-paper/40">Flags are for human review, not legal advice.</p>
+        <p className="text-xs text-ink/40">Flags are for human review, not legal advice.</p>
       </div>
 
-      <div className="lg:col-span-7 rounded-2xl bg-panel p-4 sm:p-5 space-y-4 relative overflow-hidden border border-paper/8">
+      <div className="lg:col-span-7 rounded-2xl bg-panel p-4 sm:p-5 space-y-4 relative overflow-hidden border border-ink/8">
         <div aria-hidden className="pointer-events-none absolute -top-20 -right-20 h-64 w-64 rounded-full bg-lamplight/8 blur-2xl" />
-        <div className="relative bg-panel-2 rounded-xl border border-paper/8 p-5 sm:p-6 fade-up">
+        <div className="relative bg-panel-2 rounded-xl border border-ink/8 p-5 sm:p-6 fade-up">
           <div className="absolute top-4 right-4 flex items-center gap-2">
             {stale && (
               <span className="inline-flex items-center gap-1 rounded-full bg-ember/15 text-ember text-xs font-semibold px-2.5 py-1">
@@ -154,19 +154,19 @@ export default function StoryGuard() {
             <ScoreMeter overall={adjustedOverall} tiers={TIERS} />
           </div>
           {numFixed > 0 && (
-            <p className="text-xs text-paper/50 mt-2">
+            <p className="text-xs text-ink/50 mt-2">
               Estimated score if {numFixed} fix{numFixed === 1 ? ' is' : 'es are'} applied. A projection, not a model score. Re-validate to confirm.
             </p>
           )}
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-5 pt-5 border-t border-paper/10">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-5 pt-5 border-t border-ink/10">
             {CATEGORIES.map((c) => {
               const v = adjustedCategories[c]
-              const tone = typeof v !== 'number' ? 'text-paper' : v >= 80 ? 'text-teal' : v >= 50 ? 'text-paper' : 'text-rose'
-              const severityBorder = typeof v !== 'number' ? 'border-paper/15' : v >= 80 ? 'border-teal' : v >= 50 ? 'border-lamplight' : 'border-rose'
+              const tone = typeof v !== 'number' ? 'text-ink' : v >= 80 ? 'text-teal' : v >= 50 ? 'text-ink' : 'text-rose'
+              const severityBorder = typeof v !== 'number' ? 'border-ink/15' : v >= 80 ? 'border-teal' : v >= 50 ? 'border-joy-dark' : 'border-rose'
               return (
                 <div key={c} className={`border-t-4 pt-2 ${severityBorder}`}>
-                  <div className="text-xs text-paper/55">{c}</div>
+                  <div className="text-xs text-ink/55">{c}</div>
                   <div className={`text-xl font-semibold font-display mt-0.5 tabular ${tone}`}>{v ?? '-'}</div>
                 </div>
               )
@@ -181,25 +181,25 @@ export default function StoryGuard() {
                 <div key={c}>
                   <div className="flex items-center gap-2 mb-3">
                     <span className={`h-2 w-2 rounded-full ${DOT_COLORS[catIndex % 4]}`} />
-                    <h3 className="text-sm font-semibold text-paper">{c}</h3>
-                    <span className="rounded-full bg-paper/8 text-[10px] px-2 py-0.5">{result.feedback[c].length}</span>
+                    <h3 className="text-sm font-semibold text-ink">{c}</h3>
+                    <span className="rounded-full bg-ink/8 text-[10px] px-2 py-0.5">{result.feedback[c].length}</span>
                   </div>
                   <div className="space-y-3">
                     {result.feedback[c].map((f, i) => {
                       const key = `${c}:${i}`
                       const isFixed = !!checked[key]
                       return (
-                        <div key={i} className={`bg-panel-2 border border-paper/8 rounded-xl p-4 flex gap-3 items-start transition-opacity ${isFixed ? 'opacity-60' : ''}`}>
+                        <div key={i} className={`bg-panel-2 border border-ink/8 rounded-xl p-4 flex gap-3 items-start transition-opacity ${isFixed ? 'opacity-60' : ''}`}>
                           <input
                             type="checkbox"
                             checked={isFixed}
                             onChange={(e) => setChecked((prev) => ({ ...prev, [key]: e.target.checked }))}
                             aria-label="Fixed"
-                            className="accent-lamplight mt-1 shrink-0"
+                            className="accent-joy-deep mt-1 shrink-0"
                           />
                           <div>
                             <div className={`font-medium text-rose ${isFixed ? 'line-through' : ''}`}>“{f.snippet}”</div>
-                            <div className="text-paper/70 text-sm mt-1">{f.problem}</div>
+                            <div className="text-ink/70 text-sm mt-1">{f.problem}</div>
                             <div className="mt-2 flex items-start gap-1.5 rounded-lg bg-teal/8 border border-teal/25 px-3 py-2 text-sm text-teal">
                               <span className="material-symbols-outlined mt-0.5" style={{ fontSize: 15 }}>arrow_forward</span>
                               <p>{f.fix}</p>
@@ -222,12 +222,12 @@ export default function StoryGuard() {
 
         <div className="grid md:grid-cols-2 gap-4">
           <div>
-            <h3 className="text-sm font-semibold mb-2 text-paper">Original</h3>
-            <div className="bg-panel-2 rounded-xl px-4 py-3 text-sm text-paper/70 whitespace-pre-wrap">{result.input.content}</div>
+            <h3 className="text-sm font-semibold mb-2 text-ink">Original</h3>
+            <div className="bg-panel-2 rounded-xl px-4 py-3 text-sm text-ink/70 whitespace-pre-wrap">{result.input.content}</div>
           </div>
           <div>
-            <h3 className="text-sm font-semibold mb-2 text-paper">{hasFeedback ? 'On-brand rewrite' : 'Verdict'}</h3>
-            <div className="bg-panel-2 rounded-xl px-4 py-3 text-sm border-l-4 border-lamplight whitespace-pre-wrap text-paper/85">{result.rewrite}</div>
+            <h3 className="text-sm font-semibold mb-2 text-ink">{hasFeedback ? 'On-brand rewrite' : 'Verdict'}</h3>
+            <div className="bg-panel-2 rounded-xl px-4 py-3 text-sm border-l-4 border-joy-dark whitespace-pre-wrap text-ink/85">{result.rewrite}</div>
           </div>
         </div>
       </div>

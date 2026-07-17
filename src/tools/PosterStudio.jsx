@@ -149,7 +149,7 @@ export default function PosterStudio() {
 
   return (
     <div className="grid lg:grid-cols-2 items-start fade-up min-h-full">
-      <section className="bg-panel lg:border-r border-paper/8 p-5 sm:p-8 h-full">
+      <section className="bg-panel lg:border-r border-ink/8 p-5 sm:p-8 h-full">
         <div className="space-y-4 max-w-xl">
           <Field label="Brief">
             <textarea value={form.brief} onChange={set('brief')} rows={3} className={inputCls} />
@@ -209,13 +209,13 @@ export default function PosterStudio() {
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setEngine('gemini')}
-                className={`rounded-full px-4 py-2 text-sm font-medium border cursor-pointer transition-colors ${engine === 'gemini' ? 'border-teal/40 bg-teal/12 text-teal' : 'border-paper/15 text-paper/60 hover:bg-paper/5'}`}
+                className={`rounded-full px-4 py-2 text-sm font-medium border cursor-pointer transition-colors ${engine === 'gemini' ? 'border-teal/40 bg-teal/12 text-teal' : 'border-ink/15 text-ink/60 hover:bg-ink/5'}`}
               >
                 Gemini
               </button>
               <button
                 onClick={() => setEngine('chatgpt')}
-                className={`rounded-full px-4 py-2 text-sm font-medium border cursor-pointer transition-colors ${engine === 'chatgpt' ? 'border-sky/40 bg-sky/12 text-sky' : 'border-paper/15 text-paper/60 hover:bg-paper/5'}`}
+                className={`rounded-full px-4 py-2 text-sm font-medium border cursor-pointer transition-colors ${engine === 'chatgpt' ? 'border-sky/40 bg-sky/12 text-sky' : 'border-ink/15 text-ink/60 hover:bg-ink/5'}`}
                 title="Needs OPENAI_API_KEY on the server"
               >
                 ChatGPT
@@ -231,25 +231,25 @@ export default function PosterStudio() {
             </Button>
           </div>
           {busy && <Spinner label="Mixing midnight and lamplight, keeping characters on-model…" />}
-          <p className="text-xs text-paper/45 leading-relaxed">
+          <p className="text-xs text-ink/45 leading-relaxed">
             Layout, wordmark and palette are locked. AI fills the safe slots only: never off-model characters, never invented quotes or laurels.
           </p>
         </div>
       </section>
 
-      <section className="relative bg-midnight starfield p-5 sm:p-8 h-full min-h-[500px] overflow-hidden">
+      <section className="relative bg-panel-2 p-5 sm:p-8 h-full min-h-[500px] overflow-hidden">
         <div aria-hidden className="pointer-events-none absolute -top-16 -right-16 h-56 w-56 rounded-full bg-lamplight/8 blur-2xl" />
         <div className="absolute top-5 right-5 z-10">
           <SourceBadge live={live} />
         </div>
         <div className={`relative ${results.length > 1 ? 'grid md:grid-cols-2 gap-4 mt-8' : 'mt-8 max-w-xl mx-auto'}`}>
           {results.map((item, i) => (
-            <div key={i} className="bg-panel p-3 rounded-2xl shadow-lg border border-paper/8 relative fade-up">
-              <div className="absolute top-6 left-6 z-10 rounded-full bg-midnight/90 shadow-sm">
+            <div key={i} className="bg-panel p-3 rounded-2xl shadow-lg border border-ink/8 relative fade-up">
+              <div className="absolute top-6 left-6 z-10 rounded-full bg-white/95 shadow-sm">
                 <EngineBadge name={item.engine} status="ready" />
               </div>
-              <img src={item.image} alt={`${item.engine} creative`} className="w-full rounded-xl border border-paper/5 bg-midnight" />
-              <div className="mt-3 rounded-xl bg-panel-2 border border-paper/10 px-4 py-3 text-sm whitespace-pre-wrap text-paper/85">{item.caption}</div>
+              <img src={item.image} alt={`${item.engine} creative`} className="w-full rounded-xl border border-ink/5 bg-midnight" />
+              <div className="mt-3 rounded-xl bg-panel-2 border border-ink/10 px-4 py-3 text-sm whitespace-pre-wrap text-ink/85">{item.caption}</div>
               <div className="mt-4 flex flex-wrap items-center gap-3">
                 <Button onClick={() => download(item)}>
                   <span className="inline-flex items-center gap-1.5">
@@ -270,22 +270,22 @@ export default function PosterStudio() {
         </div>
       </section>
 
-      <section className="lg:col-span-2 bg-panel border-t border-paper/8 p-5 sm:p-8">
-        <h2 className="text-lg font-semibold text-paper mb-1">Sample gallery</h2>
-        <p className="text-xs text-paper/45 mb-4">Click any card to load it into the workspace.</p>
+      <section className="lg:col-span-2 bg-panel border-t border-ink/8 p-5 sm:p-8">
+        <h2 className="text-lg font-semibold text-ink mb-1">Sample gallery</h2>
+        <p className="text-xs text-ink/45 mb-4">Click any card to load it into the workspace.</p>
         <div className="space-y-8">
           {CATEGORIES.map((cat) => {
             const items = golden.creatives.filter((c) => c.category === cat)
             if (!items.length) return null
             return (
               <div key={cat}>
-                <h3 className="text-sm font-semibold text-paper/60 mb-3">{cat}</h3>
+                <h3 className="text-sm font-semibold text-ink/60 mb-3">{cat}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {items.map((c, i) => (
                     <button
                       key={`${cat}-${i}`}
                       onClick={() => loadPreset(c)}
-                      className="group text-left bg-panel-2 rounded-2xl border border-paper/8 overflow-hidden shadow-sm hover:shadow-md hover:border-lamplight/30 transition-[box-shadow,border-color] cursor-pointer"
+                      className="group text-left bg-panel-2 rounded-2xl border border-ink/8 overflow-hidden shadow-sm hover:shadow-md hover:border-joy-dark/30 transition-[box-shadow,border-color] cursor-pointer"
                     >
                       <div className="relative aspect-square bg-midnight">
                         <img
@@ -299,8 +299,8 @@ export default function PosterStudio() {
                         </div>
                       </div>
                       <div className="p-3">
-                        <p className="text-sm font-medium text-paper line-clamp-2">{c.headline}</p>
-                        <span className="mt-2 inline-block rounded-full bg-lamplight/12 text-lamplight text-xs font-semibold px-2.5 py-1">{c.film}</span>
+                        <p className="text-sm font-medium text-ink line-clamp-2">{c.headline}</p>
+                        <span className="mt-2 inline-block rounded-full bg-lamplight/12 text-joy-deep text-xs font-semibold px-2.5 py-1">{c.film}</span>
                       </div>
                     </button>
                   ))}

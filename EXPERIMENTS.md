@@ -59,3 +59,17 @@ Re-themed against the supplied brand system, using /design-taste-frontend for th
 | Pizza Planet truck with A113 licence plate in hero parallax | **Winner** | Two easter eggs in one prop, subtle, non-blocking |
 | CSS scroll-driven reveal (`animation-timeline: view()`) | **Loser → replaced** | Left below-fold sections invisible in a flat render; swapped for IntersectionObserver + 1.5s safety net so content is never hidden |
 | Em-dashes in visible copy | **Loser → removed** | Zero-em-dash pre-flight; kept only the one in Story Guard's bad example, which its own feedback teaches about |
+
+## Design pass 3 — light "gallery" theme (2026-07-17)
+
+Flipped the app from Midnight Theater dark to a warm white canvas on request, with a user-friendliness review of layout and motion.
+
+| Change | Verdict | Why |
+|---|---|---|
+| White gallery canvas, dark posters as framed one-sheets | **Winner** | The cinematic artwork now pops instead of blending into a dark page; UI reads calmer and friendlier |
+| Darkened text accents (joy-deep gold, deep ocean/teal/ember) | **Winner** | Bright Joy Yellow text is unreadable on white; fills stay bright, text tokens pass WCAG AA |
+| "heart" now beats in Pixar Red | **Winner** | Yellow glow text failed on white; a gentle red heartbeat is more on-brand (red = high-impact moments) and literal squash-and-stretch |
+| Intro plays once per session, shortened to 900ms | **Winner** | Repeat visitors go straight in; anticipation without a toll |
+| Calmer stagger (50ms/word), faster reveals, visible focus rings | **Winner** | Less waiting, keyboard users always see where they are |
+| Bright-token sweep via regex (text-joy → text-joy-deep etc.) | **Winner, with 2 hand-fixes** | Mechanical flip caught 190+ spots; Toast went dark-on-dark and inputs kept dark color-scheme, both hand-fixed |
+| Starfield on light canvas | **Loser → removed** | White page has no stars; replaced by the warm keylight pool |

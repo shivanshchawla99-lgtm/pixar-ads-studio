@@ -65,7 +65,7 @@ export default function ScreeningRoom() {
           <Button onClick={screen} disabled={busy || !brief.trim()}>{busy ? 'Screening…' : 'Run the screening'}</Button>
         </div>
         <div className="mt-3 flex items-center justify-between">
-          <p className="text-xs text-paper/45">Four variants, each scored by Story Guard's rules. The weakest category drags the total, exactly like the real screening.</p>
+          <p className="text-xs text-ink/45">Four variants, each scored by Story Guard's rules. The weakest category drags the total, exactly like the real screening.</p>
           <SourceBadge live={live} />
         </div>
         {busy && <div className="mt-3"><Spinner label="Writing four contenders and scoring them…" /></div>}
@@ -75,40 +75,40 @@ export default function ScreeningRoom() {
         {variants.map((v, i) => (
           <div
             key={i}
-            className={`rounded-2xl p-5 border fade-up ${v.winner ? 'bg-panel-2 border-lamplight/60 shadow-[0_0_30px_rgba(255,200,61,0.12)]' : 'bg-panel border-paper/8'}`}
+            className={`rounded-2xl p-5 border fade-up ${v.winner ? 'bg-joy/8 border-joy-dark/60 shadow-[0_10px_30px_-10px_rgba(217,183,15,0.45)]' : 'bg-panel border-ink/8'}`}
             style={{ animationDelay: `${i * 60}ms` }}
           >
             <div className="flex items-start justify-between gap-3">
-              <div className="font-display font-semibold text-lg text-paper leading-snug">“{v.hook}”</div>
+              <div className="font-display font-semibold text-lg text-ink leading-snug">“{v.hook}”</div>
               {v.winner ? (
                 <span className="shrink-0 inline-flex items-center gap-1 rounded-full bg-lamplight text-midnight text-xs font-bold px-2.5 py-1">
                   <span className="material-symbols-outlined" style={{ fontSize: 14 }}>trophy</span>
                   Winner
                 </span>
               ) : (
-                <span className="shrink-0 text-2xl font-display font-bold text-paper/35 tabular">{v.overall}</span>
+                <span className="shrink-0 text-2xl font-display font-bold text-ink/35 tabular">{v.overall}</span>
               )}
             </div>
-            <p className="text-sm text-paper/75 mt-2">{v.primary_text}</p>
-            <span className="mt-3 inline-block rounded-full border border-paper/20 text-paper/70 text-xs font-semibold px-3 py-1">{v.cta}</span>
-            <div className="grid grid-cols-4 gap-2 mt-4 pt-3 border-t border-paper/8">
+            <p className="text-sm text-ink/75 mt-2">{v.primary_text}</p>
+            <span className="mt-3 inline-block rounded-full border border-ink/20 text-ink/70 text-xs font-semibold px-3 py-1">{v.cta}</span>
+            <div className="grid grid-cols-4 gap-2 mt-4 pt-3 border-t border-ink/8">
               {CATEGORIES.map((c) => {
                 const s = v.scores?.[c]
-                const tone = typeof s !== 'number' ? 'text-paper/40' : s >= 80 ? 'text-teal' : s >= 50 ? 'text-lamplight' : 'text-rose'
+                const tone = typeof s !== 'number' ? 'text-ink/40' : s >= 80 ? 'text-teal' : s >= 50 ? 'text-joy-deep' : 'text-rose'
                 return (
                   <div key={c}>
-                    <div className="text-[10px] text-paper/45 leading-tight">{c}</div>
+                    <div className="text-[10px] text-ink/45 leading-tight">{c}</div>
                     <div className={`text-sm font-semibold tabular ${tone}`}>{s ?? '-'}</div>
                   </div>
                 )
               })}
             </div>
-            <p className="text-xs text-paper/55 mt-3 italic">{v.verdict}</p>
+            <p className="text-xs text-ink/55 mt-3 italic">{v.verdict}</p>
             {v.winner && (
               <div className="mt-3 flex flex-wrap gap-4">
                 <button
                   onClick={() => sendTo('/poster', { brief: `${v.hook} ${v.primary_text}`, film, cta: v.cta })}
-                  className="inline-flex items-center gap-1 text-xs font-semibold text-lamplight hover:underline cursor-pointer"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-joy-deep hover:underline cursor-pointer"
                 >
                   Make the poster
                   <span className="material-symbols-outlined" style={{ fontSize: 14 }}>east</span>
@@ -127,7 +127,7 @@ export default function ScreeningRoom() {
       </div>
 
       {winner && (
-        <p className="text-xs text-paper/45">
+        <p className="text-xs text-ink/45">
           Winner picked on scores alone. The low scorer stays on screen on purpose: seeing why it lost is half the tool.
         </p>
       )}

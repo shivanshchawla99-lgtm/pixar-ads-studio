@@ -49,36 +49,36 @@ export default function PersonaStudio() {
           {busy && <Spinner label="Turning audience signals into people…" />}
           <div className="ml-auto"><SourceBadge live={live} /></div>
         </div>
-        <p className="text-xs text-paper/45 mt-3">
+        <p className="text-xs text-ink/45 mt-3">
           Personas are grounded in Audience Lab signals and the brand file's audience section. Every persona cites the signal it grew from.
         </p>
       </Card>
 
       {!result?.personas?.length ? (
         <Card>
-          <p className="text-sm text-paper/70 text-center py-6">No personas yet for {film}.</p>
+          <p className="text-sm text-ink/70 text-center py-6">No personas yet for {film}.</p>
         </Card>
       ) : (
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
           {result.personas.map((p, i) => {
             const accent = ACCENTS[i % ACCENTS.length]
             return (
-              <div key={p.name} className={`rounded-2xl bg-panel border border-paper/8 border-t-4 ${accent.border} p-5 flex flex-col gap-3 fade-up`} style={{ animationDelay: `${i * 60}ms` }}>
+              <div key={p.name} className={`rounded-2xl bg-panel border border-ink/8 border-t-4 ${accent.border} p-5 flex flex-col gap-3 fade-up`} style={{ animationDelay: `${i * 60}ms` }}>
                 <div>
-                  <h3 className="font-display font-semibold text-lg text-paper">{p.name}</h3>
+                  <h3 className="font-display font-semibold text-lg text-ink">{p.name}</h3>
                   <p className={`text-xs font-semibold mt-0.5 ${accent.text}`}>{p.segment}</p>
                 </div>
-                <blockquote className="text-xs italic text-paper/60 border-l-2 border-paper/20 pl-2.5">
+                <blockquote className="text-xs italic text-ink/60 border-l-2 border-ink/20 pl-2.5">
                   Grew from: “{p.quote_basis}”
                 </blockquote>
                 <dl className="text-sm space-y-2">
-                  <div><dt className="text-paper/45 text-xs font-semibold uppercase tracking-wide">Wants</dt><dd className="text-paper/80">{p.wants}</dd></div>
-                  <div><dt className="text-paper/45 text-xs font-semibold uppercase tracking-wide">Fears</dt><dd className="text-paper/80">{p.fears}</dd></div>
-                  <div><dt className="text-paper/45 text-xs font-semibold uppercase tracking-wide">Where they live online</dt><dd className="text-paper/80">{p.media}</dd></div>
-                  <div><dt className="text-paper/45 text-xs font-semibold uppercase tracking-wide">Targeting notes</dt><dd className="text-paper/80">{p.targeting}</dd></div>
+                  <div><dt className="text-ink/45 text-xs font-semibold uppercase tracking-wide">Wants</dt><dd className="text-ink/80">{p.wants}</dd></div>
+                  <div><dt className="text-ink/45 text-xs font-semibold uppercase tracking-wide">Fears</dt><dd className="text-ink/80">{p.fears}</dd></div>
+                  <div><dt className="text-ink/45 text-xs font-semibold uppercase tracking-wide">Where they live online</dt><dd className="text-ink/80">{p.media}</dd></div>
+                  <div><dt className="text-ink/45 text-xs font-semibold uppercase tracking-wide">Targeting notes</dt><dd className="text-ink/80">{p.targeting}</dd></div>
                 </dl>
-                <div className="mt-auto pt-2 border-t border-paper/8">
-                  <div className="text-xs font-semibold text-paper/45 uppercase tracking-wide mb-1.5">Hooks that work</div>
+                <div className="mt-auto pt-2 border-t border-ink/8">
+                  <div className="text-xs font-semibold text-ink/45 uppercase tracking-wide mb-1.5">Hooks that work</div>
                   <div className="space-y-1.5">
                     {(p.winning_hooks || []).map((h) => (
                       <div key={h} className={`text-sm font-display font-medium rounded-lg px-3 py-2 ${accent.bg} ${accent.text}`}>“{h}”</div>
